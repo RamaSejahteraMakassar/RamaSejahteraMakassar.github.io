@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html class="light" lang="id"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Yayasan Rama Sejahtera - Membentuk Pemimpin Masa Depan</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2563eb", // Vibrant Professional Blue (Blue 600)
+                        "primary-hover": "#1d4ed8", // Blue 700
+                        "primary-light": "#dbeafe", // Blue 100
+                        "primary-dark": "#1e3a8a", // Blue 900
+                        "background-light": "#f8fafc",
+                        "background-dark": "#0f172a",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .dark .glass {
+            background: rgba(15, 23, 42, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 px-4 py-3">
+    <nav class="max-w-7xl mx-auto glass rounded-xl px-4 md:px-6 py-3 flex items-center justify-between shadow-sm">
+        <div class="flex items-center gap-3">
+            <div class="bg-primary p-1.5 rounded-lg text-white">
+                <span class="material-symbols-outlined text-2xl">school</span>
+            </div>
+            <h2 class="text-lg font-bold tracking-tight text-slate-900 dark:text-white">Rama <span class="text-primary">Sejahtera</span></h2>
+        </div>
+        <div class="hidden lg:flex items-center gap-8">
+            <a class="text-sm font-semibold text-primary" href="#">Beranda</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Profil</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Akademik</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Kesiswaan</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Galeri</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Kontak</a>
+        </div>
+        <div class="flex items-center gap-2 md:gap-4">
+            <div class="hidden md:flex items-center bg-slate-100 dark:bg-slate-800/50 rounded-lg px-3 py-1.5 border border-slate-200 dark:border-slate-700">
+                <span class="material-symbols-outlined text-slate-400 text-sm">search</span>
+                <input class="bg-transparent border-none focus:ring-0 text-xs w-32" placeholder="Cari info..." type="text"/>
+            </div>
+            <button class="bg-primary hover:bg-primary-hover text-white px-4 md:px-5 py-2 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20">
+                Daftar
+            </button>
+        </div>
+    </nav>
+</header>
+<!-- Hero Section -->
+<section class="relative pt-28 pb-16 md:pt-40 md:pb-24 px-4 overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-blue-100/50 via-transparent to-transparent dark:from-blue-900/20"></div>
+    <div class="max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 md:space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 px-4 py-2 rounded-full text-sm font-semibold">
+                    <span class="material-symbols-outlined text-sm">verified</span>
+                    Akreditasi A Unggul
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-7xl font-black leading-tight tracking-tight">
+                    Membentuk <br/><span class="text-primary">Pemimpin</span> Masa Depan
+                </h1>
+                <p class="text-base md:text-lg text-slate-600 dark:text-slate-400 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+                    Mewujudkan generasi unggul, berkarakter, dan inovatif di bawah naungan Yayasan Rama Sejahtera dengan kurikulum berbasis teknologi dan moral.
+                </p>
+                <div class="flex flex-wrap justify-center lg:justify-start gap-4">
+                    <button class="bg-primary hover:bg-primary-hover text-white px-6 md:px-8 py-3 md:py-4 rounded-xl font-bold flex items-center gap-2 transition-all shadow-xl shadow-primary/25">
+                        Daftar Sekarang <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                    <button class="glass px-6 md:px-8 py-3 md:py-4 rounded-xl font-bold flex items-center gap-2 hover:bg-white transition-all">
+                        Lihat Profil
+                    </button>
+                </div>
+            </div>
+            <div class="relative mt-8 lg:mt-0">
+                <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl relative">
+                    <img alt="Modern school building with students walking" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4hWkZRyeyznRM2FeDEEoE6B5KdBUd9zlQsoSSmMrtwU9BDe0I9dJoCDBgsPLw4xfHT0M9GzNSHYWFfSrZZEvEi0G6W1up80z-2ska-gNi5VVtbhfXrhH75VcsPiAbxVX1yKms5K0zCIE9LbBr87Y7V4S21VULWhmOQe-Yx1dR2IsV74vDdyYbOoF_ueP1AmxOSh9OsGG5-JTmCuxhfiNADbTdG4V2Prdhcf0VYhSbWulS0e5otP7IVs6QDCBn-NRsZVsTPl6caxNG"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent flex items-end p-6 md:p-8">
+                        <div class="glass p-4 rounded-xl text-white">
+                            <p class="text-[10px] md:text-xs font-medium uppercase tracking-widest opacity-80">Fasilitas Unggulan</p>
+                            <p class="text-base md:text-lg font-bold">Laboratorium STEM &amp; Bahasa</p>
+                        </div>
+                    </div>
+                </div>
+<!-- Decorative element -->
+<div class="absolute -bottom-4 -left-4 md:-bottom-6 md:-left-6 glass p-4 md:p-6 rounded-2xl shadow-xl hidden sm:block">
+    <div class="flex items-center gap-4">
+        <div class="flex -space-x-3">
+            <div class="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-white bg-slate-200"></div>
+            <div class="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-white bg-slate-300"></div>
+            <div class="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-white bg-slate-400"></div>
+        </div>
+        <div>
+            <p class="text-xs md:text-sm font-bold">1,200+ Siswa</p>
+            <p class="text-[10px] md:text-xs opacity-70">Telah bergabung</p>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Profil Section -->
+<section class="py-16 md:py-24 bg-slate-50 dark:bg-slate-900/50">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="grid lg:grid-cols-3 gap-12">
+<!-- Principal Message -->
+<div class="lg:col-span-1">
+    <div class="glass p-6 md:p-8 rounded-3xl lg:sticky lg:top-28">
+        <div class="relative w-24 h-24 md:w-32 md:h-32 mx-auto mb-6">
+            <img alt="Portrait of a smiling male school principal" class="w-full h-full object-cover rounded-2xl shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClacoABtclSdr1-6GEpQOyMIg6SMhHgj9z0tG5aJ7IXOwBCMtUUbhslsEfeXXKQvGZua5hrDEIl44MD_VS_GGbLFJB5YaxI3Uvo5arjBsLU1Zeoc55ITsMT7ubhn-eHPaNS54hGiNiw2XemPzcy-e1ZHYv8dtO5DxsJvR17EfF8jn_YWztJSO0OFIFWJa0B4wy0363oP39CqbzaM4-t7OVt193XtkgrAySL4oPwyE9EpEsmZ64PjfrXWe218TvGTU7T9JsgRjQhgrM"/>
+            <div class="absolute -bottom-2 -right-2 bg-primary text-white p-2 rounded-lg">
+                <span class="material-symbols-outlined text-sm">format_quote</span>
+            </div>
+        </div>
+        <h3 class="text-lg md:text-xl font-bold text-center mb-1">Drs. Rama Suwito, M.Si.</h3>
+        <p class="text-primary text-sm font-bold text-center mb-6">Kepala Sekolah</p>
+        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed text-center italic">
+            "Pendidikan bukan hanya tentang mengisi wadah, melainkan menyalakan api inspirasi. Kami berkomitmen mendampingi setiap anak menemukan potensi terbaiknya."
+        </p>
+    </div>
+</div>
+<!-- Vision Mission & History -->
+<div class="lg:col-span-2 space-y-12">
+    <div>
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
+            <span class="w-8 h-1 bg-primary rounded-full"></span>
+            Visi &amp; Misi
+        </h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-primary/50 transition-colors group bg-white dark:bg-slate-900/30">
+                <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 text-primary rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined">visibility</span>
+                </div>
+                <h4 class="text-lg font-bold mb-2">Visi Kami</h4>
+                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                    Menjadi institusi pendidikan model yang menghasilkan lulusan berakhlak mulia, kompetitif global, dan peduli lingkungan.
+                </p>
+            </div>
+            <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-primary/50 transition-colors group bg-white dark:bg-slate-900/30">
+                <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 text-primary rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined">track_changes</span>
+                </div>
+                <h4 class="text-lg font-bold mb-2">Misi Kami</h4>
+                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                    Menyelenggarakan pembelajaran aktif, kreatif, dan menyenangkan dengan dukungan teknologi terkini.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
+            <span class="w-8 h-1 bg-primary rounded-full"></span>
+            Sejarah Singkat
+        </h2>
+        <div class="glass p-6 md:p-8 rounded-2xl">
+            <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4 text-sm md:text-base">
+                Didirikan pada tahun 1995, Yayasan Rama Sejahtera bermula dari sebuah sekolah kecil dengan impian besar. Selama lebih dari 25 tahun, kami telah bertransformasi menjadi salah satu komplek pendidikan terlengkap di wilayah ini.
+            </p>
+            <button class="text-primary font-bold flex items-center gap-2 hover:underline text-sm">
+                Baca Selengkapnya <span class="material-symbols-outlined text-sm">open_in_new</span>
+            </button>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Academic & Student Activities -->
+<section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center max-w-2xl mx-auto mb-12 md:mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Kehidupan Sekolah</h2>
+            <p class="text-slate-600 dark:text-slate-400 text-sm md:text-base">Kami menyediakan lingkungan belajar yang holistik mulai dari kurikulum akademik yang menantang hingga kegiatan ekstrakurikuler yang beragam.</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Academic Card -->
+<div class="group relative overflow-hidden rounded-3xl aspect-[4/5] shadow-lg">
+    <img alt="Students studying in a modern library" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW4x6WTjtTf3_sMCAzNf7WQYlNvrQl_fmlUytbeQGp4UvTi3ls442yrbps84vvf9JYx9vii-pwD54KLskwr5NmnVwoEB398s_JJjLX21du4vzjppCICjt94MShUadSCPz2ebuRZLbvj_PTR928wSTlFTsQ6qVgdz6SM1KJn8VXYYeDCo8tnKNksW3pW6UOCdlyMMPWTtGsuTnqiSBbF8nlC5TJLmTpSkrpXk1UAvsP__0MMrtBDXuMLKy4VCXWXS6KvGiFrCiX4BdH"/>
+    <div class="absolute inset-0 bg-gradient-to-t from-blue-900/90 via-blue-900/20 to-transparent p-6 flex flex-col justify-end">
+        <h4 class="text-white text-xl font-bold mb-2">Program Unggulan</h4>
+        <p class="text-blue-100 text-sm">International Curriculum, Bilingual Class, STEM Labs.</p>
+    </div>
+</div>
+<!-- Extra Card -->
+<div class="group relative overflow-hidden rounded-3xl aspect-[4/5] shadow-lg">
+    <img alt="Students playing basketball on school court" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-HzXAxd9hb2oVIgjIZuAyTfOZpkJs60TDKzr0LHbM_xNIkoJbu_v4kM99qeDKOFl6rYAHVg22ZNVWv7dg6R-C8og7Jx7oLEy9FO-A3kycrlTIZrc0Tc9r4SmxzA05duONItTkHQDyVz85rQxKaRlNtl1GOhZ1v8f-YxXmIidWDjaFvUcDw9FNOx9waPzqobohOGrwborLXLv4nSrrDoaL2IEXFjCLCOL6WRIDyTgs_V0Oy2yVWAGdam20Wr1YIvpYXjpvCkt94HSO"/>
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent p-6 flex flex-col justify-end">
+        <h4 class="text-white text-xl font-bold mb-2">Ekstrakurikuler</h4>
+        <p class="text-slate-200 text-sm">Basket, Robotik, Tari Tradisional, dan Coding Club.</p>
+    </div>
+</div>
+<!-- Achievements -->
+<div class="lg:col-span-2 glass rounded-3xl p-6 md:p-8 flex flex-col justify-center shadow-lg">
+    <div class="grid grid-cols-2 gap-6 md:gap-8">
+        <div>
+            <p class="text-3xl md:text-4xl font-black text-primary mb-1">98%</p>
+            <p class="text-[10px] md:text-sm font-bold opacity-70 uppercase tracking-wider">Lulusan ke PTN</p>
+        </div>
+        <div>
+            <p class="text-3xl md:text-4xl font-black text-primary mb-1">50+</p>
+            <p class="text-[10px] md:text-sm font-bold opacity-70 uppercase tracking-wider">Prestasi Nasional</p>
+        </div>
+        <div>
+            <p class="text-3xl md:text-4xl font-black text-primary mb-1">1:15</p>
+            <p class="text-[10px] md:text-sm font-bold opacity-70 uppercase tracking-wider">Rasio Guru &amp; Siswa</p>
+        </div>
+        <div>
+            <p class="text-3xl md:text-4xl font-black text-primary mb-1">24/7</p>
+            <p class="text-[10px] md:text-sm font-bold opacity-70 uppercase tracking-wider">Keamanan &amp; Layanan</p>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</section>
+<!-- News Section -->
+<section class="py-16 md:py-24 bg-slate-50 dark:bg-slate-900/50">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 md:mb-12 gap-4">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-2">Berita &amp; Pengumuman</h2>
+                <p class="text-slate-600 dark:text-slate-400 text-sm md:text-base">Ikuti perkembangan terbaru dari lingkungan yayasan.</p>
+            </div>
+            <button class="text-primary font-bold flex items-center gap-2 group w-fit">
+                Semua Berita <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+            </button>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- News 1 -->
+<article class="bg-white dark:bg-slate-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all group">
+    <div class="h-48 overflow-hidden">
+        <img alt="Science experiment in school classroom" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4ahWxa9IxZoG_ngZBvginBHsOf2IGC33caJwJv1l3opwK9RG6tjtLIM0YseRLtuqG39UPlLDdtFF39jZOHlcts5fe7hhk8c74gHQ3MvLlBz-rNldKDWrcKZYpRTCg8WtFXfFl3m9KCsQT9_A6b5NKBuvCd2QtAsp0L6bVtNSvx-6iw46DxceO4ZfM0MaEEW8li0Km2dn6B8f7mEIUZgF0x7S2AIBh_B2vjqG3sRp6kr0eTD8ljKkLPOSwXJGdeC_Hx5tVvjEsd8KB"/>
+    </div>
+    <div class="p-6">
+        <div class="flex items-center gap-2 mb-3">
+            <span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 text-[10px] md:text-xs font-bold px-2 py-1 rounded">Akademik</span>
+            <span class="text-slate-400 text-[10px] md:text-xs">12 Jan 2024</span>
+        </div>
+        <h4 class="text-lg font-bold mb-2 group-hover:text-primary transition-colors">Juara Umum Olimpiade Sains Nasional 2024</h4>
+        <p class="text-slate-600 dark:text-slate-400 text-sm line-clamp-2">Siswa kami berhasil meraih total 12 medali emas dalam kompetisi bergengsi tingkat nasional...</p>
+    </div>
+</article>
+<!-- News 2 -->
+<article class="bg-white dark:bg-slate-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all group">
+    <div class="h-48 overflow-hidden">
+        <img alt="School charity event distribution" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnYbVdA7jUsArITVOxQGp57EwrEwGTdgM7GHjy8HelXfNWEj71YpEwj2dj4Csf9rqQgIQN1ZqlNdzQrNE-DiRpbhd6sC8XtRZnJPG1kQKlcPSD5Ly4r7MsHvS2-V8RonBttk53wruhGsicSQDD4kCfjBZwBh5QT5qSnIPRyZLH4BXylcMFAL3qrac-CmZOEwS6i9e3ZMocK529tQvjqFsvcOSp5IMfd8MJ_sPQ6sKmREK2ORyZFo71ZYXxR_kVas3ZTvq3Hp0roFl6"/>
+    </div>
+    <div class="p-6">
+        <div class="flex items-center gap-2 mb-3">
+            <span class="bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-400 text-[10px] md:text-xs font-bold px-2 py-1 rounded">Sosial</span>
+            <span class="text-slate-400 text-[10px] md:text-xs">08 Jan 2024</span>
+        </div>
+        <h4 class="text-lg font-bold mb-2 group-hover:text-primary transition-colors">Rama Berbagi: Donasi untuk Panti Asuhan</h4>
+        <p class="text-slate-600 dark:text-slate-400 text-sm line-clamp-2">Kegiatan rutin bulanan OSIS Rama Sejahtera dalam menyebarkan kebaikan kepada sesama...</p>
+    </div>
+</article>
+<!-- News 3 -->
+<article class="bg-white dark:bg-slate-800 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all group">
+    <div class="h-48 overflow-hidden">
+        <img alt="Teachers training session with laptops" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3a03TCpi2bIG0WRmQqk3ZYV-9Vsj4lY52IBWBg9liqoiRD5P19BI6PdYQOClglkdgzBIAW3IfZUW2pDcjbrKhMLhUju6RWEj5eug-6hFqnWHJAp6g_WfjIf07EDlBb81PP6KagM-x3ORNgkl0V-tpgt2rdBwJ8xBUZExl9agkAQdqB6AOYza7TEn9BD76bYY0hOcoCSdMrcA3acrWFpqvpWIT4vIqQ2TMJcUZ2eVqigB2yDU2HhccVPkRoD2hUkxYNHk-qIxCshn0"/>
+    </div>
+    <div class="p-6">
+        <div class="flex items-center gap-2 mb-3">
+            <span class="bg-sky-100 dark:bg-sky-900/30 text-sky-700 dark:text-sky-400 text-[10px] md:text-xs font-bold px-2 py-1 rounded">Pengumuman</span>
+            <span class="text-slate-400 text-[10px] md:text-xs">05 Jan 2024</span>
+        </div>
+        <h4 class="text-lg font-bold mb-2 group-hover:text-primary transition-colors">Workshop Kurikulum Merdeka bagi Pengajar</h4>
+        <p class="text-slate-600 dark:text-slate-400 text-sm line-clamp-2">Peningkatan kualitas SDM pengajar melalui pelatihan intensif bersama pakar pendidikan nasional...</p>
+    </div>
+</article>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-10 md:mb-12 text-center">Galeri Foto</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+            <div class="space-y-3 md:space-y-4">
+                <img alt="Teacher in front of classroom" class="w-full rounded-2xl aspect-video object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2oA3FPcNPlkHrSyLKBVdDljgNhvI-TQTi6RG0lJKFiggs99Be2EB1kNvn-fazHfmequCeY68e8zKm8tZmsZCHW2XFPsu7tjQ_zMo7VvH1nWMHYKXFgQmnbtQZsP_jr1XmEUJz3iR6o71Ir2n5G7RODNFl6Zw_hDpyLA9i56cqrbiFB0e1p21iO8Qxn3omL7CI3UXN2tWa56u0bIrN1qLn4HrtdFUnTvvlDCnR1XrEA-fc17pnQaEMwS4b2G_CpWttafADYKpgamos"/>
+                <img alt="Students smiling during group work" class="w-full rounded-2xl aspect-square object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIKSecgT5h_LYaLyliHSlqtA_n5g9aYypOgPN9qe255Ae_Bcprwt5yWeyrR9Z78Bum02UvB799vBiwVvWyi0NpFHUP-qHGyJZY1oMvMWJYRIYxKrEiCKFbIdNHmXm8ZvgBG7_E3UeLGbWjHRbSY4Qgfy0JDc8teNgyq2zBPvZCvNy2d6dAtz2m4Ojv1KX8m8-Xe4whHCjOAfQGvMK8mlJb6Ti3okRxrbOwXQF5I8pZQKSLUsKqivOMhYSBd6scY7yjplbz-iBid11E"/>
+            </div>
+            <div class="space-y-3 md:space-y-4">
+                <img alt="Digital classroom using tablets" class="w-full rounded-2xl aspect-square object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiLdP_DFZWkV0NmeQHZLUjqGOzOvYwuSSH0CpQdGHTaDl6q2yq8zdWHc3oOJy2I2KllrdlT41lG80z1fhlLsa8fSDeX1zr56VJ8GI-tCpYfj7YUbKaSpMfuti8YldfnXfPigpYtQVSO_SXuxA1a6fD0lX38W0chtjLakMrAc2sPGb4Bt80_ywYfluS7aaMDMhYMuznVFt6NQyrx9EYIC62aproaliKMYBxgXdHgzftsTXLV2e5eXajiBsMXjS584jiqz3TfAPvlP3D"/>
+                <img alt="School yoga class outside" class="w-full rounded-2xl aspect-video object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb9xRJxCSXgS86GZ4W7T8TW8gDf-190yURgzrmDzfi6c1TJS7oHNK2EC4WRGWqO134R0g2IM_GUtBwS0_N1jTNaTUg9QyvBqJXjPn2RmTtLiP6gbuJi76Lu704xhGO29HM9Jo43JMB9kxV17zX960f5fLrfJ3N_5-GWQQZ9pXvg8ksClsV7_cJjedQ02vcgz9cWNZlPlbp5LWR4PEmXH3WU_jZUcmo0W70W2Mt7kQLYZW0iRvBRYB_NvLeW71cMbA81CcbPrAugOML"/>
+            </div>
+            <div class="space-y-3 md:space-y-4">
+                <img alt="Modern school hallway architecture" class="w-full rounded-2xl aspect-video object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvEzc1wGqIi3TTZy7xd82Z7efvNkbBt2sK3x6C9ZfFr130ZkTaFjtjNIwX_QFlpEj1yTWyyaUTfM6f39nSr0Lt0_Kq_PbkR5O-8JM2E0-X2zPyWu2kVwbWNTjF9WM8BoWT-CRIOUlT5GHxzo0K-_HSSFJP0yXPl8Nye3p0nwCN-3hW9gJL4edN3Zr8uK1J2T3RU6gdqDYff_QzcKF03fSxIewJT-GEOZLNX3CgWiUhsMSgh37r1rpkyPMmfnEZDV5xbi_cQ0HfvuiV"/>
+                <img alt="Students presenting projects" class="w-full rounded-2xl aspect-square object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPC4nqaO_dSf52xpVtNEO2QKQVxa6BKceMWdDJltCVUCkmcWkNMvydvDmOaXweoD56k6mQoXPOIi4_AzIrCFMOOQx05HoA5Z86fygtYb9KkenAnCbIj7P7ZCuEozU6YuwUxl312eB2xah5Da61-udalQMV0mP3SZZ1YW6eocBsQh_rBd-zwnUbR_H02UGxNHYWHaKRKdPqounmvgDAxCfBWPFpftKhsMq02rB8qCFGeWJJqafWEkj8o1CJr85CkBxoeJOldV3kuk_l"/>
+            </div>
+            <div class="space-y-3 md:space-y-4">
+                <img alt="Students studying together outside" class="w-full rounded-2xl aspect-square object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRzQQuvgVUocH-Betz0sQc2pACtchDGRe90YJAaic33PPa6PmvqwQbQleGW1NZpCWwsCgoFsDJBs6IgS17eUi9KknhMY0LfD-i8jKkgyMPSrogSraV16SY3Mr1pfFgFGUQv0fnx9MWV0qxRSNKq2MShwNqx1Rm-eairUX8s_5Tmc8XnpmEqpx3zoKIBxjqBrQDPqP-2SHgxpZBRXBfH8--l5ItW_ypoTjkfQmS-Fq6d-uBXRkGjzSH1PmNWHCdaJA8XvrjQI_UYZVF"/>
+                <img alt="Hands of teacher and student on desk" class="w-full rounded-2xl aspect-video object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdUNTQaRIbfMy5ZID6gbVAKCTXf30qeawOrrjRXgPWC1fSBVnGvIZx5GvBkFS8hDqwSYIXVsljDR07Ix2plXPTPYDHi5OpS4gMBE5e7JGvX7KZ9sg3ZDYYEM69351wW6WS8uIwWyMQ0xTChrzy1lL0h83zLYbYAFPzihRawtAQMdO9h-eJHfd9Du07iSQ_W76zhsnVr0xmpTmq-VKRrWljNKz3ADIaUA5xzKaGTUDscGNTBG-l4aceI9_UZuJcclVRdmBXNGwxkKru"/>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-900 text-slate-300 pt-16 md:pt-20 pb-10">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="grid lg:grid-cols-4 gap-12 mb-16">
+<!-- Branding & Address -->
+<div class="space-y-6">
+    <div class="flex items-center gap-3">
+        <div class="bg-primary p-1.5 rounded-lg text-white">
+            <span class="material-symbols-outlined text-2xl">school</span>
+        </div>
+        <h2 class="text-xl font-bold tracking-tight text-white">Rama <span class="text-primary">Sejahtera</span></h2>
+    </div>
+    <p class="text-sm leading-relaxed opacity-70">
+        Jl. Pendidikan No. 45, Kebayoran Baru,<br/>
+        Jakarta Selatan, DKI Jakarta 12150,<br/>
+        Indonesia
+    </p>
+    <div class="flex gap-4">
+        <a class="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center hover:bg-primary hover:border-primary transition-all" href="#">
+            <svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12.073-12-12.073s-12 5.446-12 12.073c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.791-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+        </a>
+        <a class="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center hover:bg-primary hover:border-primary transition-all" href="#">
+            <svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+        </a>
+    </div>
+</div>
+<!-- Navigation Links -->
+<div>
+    <h4 class="text-white font-bold mb-6">Tautan Cepat</h4>
+    <ul class="space-y-4 text-sm opacity-70">
+        <li><a class="hover:text-primary transition-colors" href="#">Struktur Organisasi</a></li>
+        <li><a class="hover:text-primary transition-colors" href="#">Kalender Akademik</a></li>
+        <li><a class="hover:text-primary transition-colors" href="#">Pendaftaran Online</a></li>
+        <li><a class="hover:text-primary transition-colors" href="#">E-Learning Portal</a></li>
+        <li><a class="hover:text-primary transition-colors" href="#">Alumni Network</a></li>
+    </ul>
+</div>
+<!-- Contact Info -->
+<div>
+    <h4 class="text-white font-bold mb-6">Hubungi Kami</h4>
+    <ul class="space-y-4 text-sm opacity-70">
+        <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-lg">call</span>
+            (021) 555-0123
+        </li>
+        <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-lg">mail</span>
+            info@ramasejahtera.sch.id
+        </li>
+        <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-lg">schedule</span>
+            Senin - Jumat, 07:00 - 16:00
+        </li>
+    </ul>
+</div>
+<!-- Maps Preview -->
+<div>
+    <h4 class="text-white font-bold mb-6">Lokasi Kampus</h4>
+    <div class="rounded-xl overflow-hidden h-40 bg-slate-800 relative grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer">
+        <img alt="Map location snippet of Jakarta" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu75MwOiWEzoDtWn5loSqD9onKSU42RvsVZu9H6h0-pquonaL-2CaUE30Cs1I6vOxJOJqoBT3uJu0o3x-IrLRgqwigGnx1J6GFuZFsdbzHk2IUe4pJGNZgYq1my48eyeaunuAjN8BJjpay6oazZMXCuzKwu9oY7PkIbRz4or8XEmdtiXqzdtW3ELMIiT41UEESmkFWjcZ8-OwsbzdV1y0NwZo3afKcQKriJTFS24Tq_5EXw_yIBY9C2R56qeqUxhFvGMdXm7lgpxJQ"/>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="bg-primary text-white p-2 rounded-full animate-bounce">
+                <span class="material-symbols-outlined">location_on</span>
+            </div>
+        </div>
+    </div>
+    <a class="mt-2 block text-xs text-primary font-bold hover:underline" href="https://maps.google.com" target="_blank">Petunjuk Arah →</a>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs opacity-50">
+    <p>© 2024 Yayasan Rama Sejahtera. All Rights Reserved.</p>
+    <div class="flex gap-6">
+        <a class="hover:text-white" href="#">Privacy Policy</a>
+        <a class="hover:text-white" href="#">Terms of Service</a>
+        <a class="hover:text-white" href="#">Sitemap</a>
+    </div>
+</div>
+</div>
+</footer>
+</body></html>
