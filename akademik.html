@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2563eb", // Vibrant Professional Blue (Blue 600)
+                        "background-light": "#f8fafc",
+                        "background-dark": "#0f172a",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .dark .glass {
+            background: rgba(15, 23, 42, 0.7);
+            border: 1px solid rgba(37, 99, 235, 0.1);
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 glass border-b border-blue-100 dark:border-blue-900/30 px-4 md:px-6 lg:px-20 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-4 lg:gap-8">
+        <div class="flex items-center gap-3 text-primary">
+            <span class="material-symbols-outlined text-3xl">auto_awesome</span>
+            <h1 class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white">Rama Sejahtera</h1>
+        </div>
+        <nav class="hidden md:flex items-center gap-4 lg:gap-8">
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Beranda</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="profil.html">Profil</a>
+            <a class="text-sm font-semibold text-primary" href="akademik.html">Akademik</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="Kesiswaan.html">Kesiswaan</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="berita.html">Berita</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="kontak.html">Kontak</a>
+        </nav>
+    </div>
+    <div class="flex items-center gap-2 lg:gap-4">
+        <div class="hidden sm:flex items-center bg-blue-50 dark:bg-blue-950/30 rounded-xl px-3 py-1.5 border border-blue-100 dark:border-blue-900/50">
+            <span class="material-symbols-outlined text-blue-600 text-xl">search</span>
+            <input class="bg-transparent border-none focus:ring-0 text-sm w-32 lg:w-48 placeholder-blue-400" placeholder="Search resources..." type="text"/>
+        </div>
+        <button class="bg-primary hover:bg-blue-700 text-white px-4 lg:px-6 py-2.5 rounded-xl font-bold text-sm transition-all shadow-lg shadow-blue-500/20 whitespace-nowrap">
+            Enrol Now
+        </button>
+    </div>
+</header>
+<main class="max-w-7xl mx-auto px-4 md:px-6 lg:px-20 py-12 space-y-24">
+<!-- Hero Section -->
+<section class="relative rounded-3xl overflow-hidden min-h-[450px] lg:min-h-[500px] flex flex-col justify-end p-6 md:p-12 lg:p-16">
+    <div class="absolute inset-0 bg-cover bg-center" data-alt="Modern university campus building with glass windows" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPuWCyHRwnO6WkOHCUgKCsu3ikLj6blBWv3Qr866Z4G4iuMHIznlOoQg4R_4VkKTvK_pFAZXWBrvkFacuLKOGJynxHOIFDwQ5XLnb3loztV2sKtYgVNHwWhY5_RRpPGK3gPJgt04Yjc230mt3uTSKmYuUuAZw-LRRzvUv_Pgw0uk_34vSJoIgXcDWKodsxxc7QDdwICqLIQBXHr4ZmUHmjNgnlZrD73Nn7YRfRxDc8V2uVxHmfpyPAKG2pB8_r_i8kKdCZaIY7-tOw')"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/40 to-transparent"></div>
+    <div class="relative z-10 max-w-2xl space-y-6">
+        <span class="bg-primary/20 backdrop-blur-md border border-primary/30 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">Academic Excellence</span>
+        <h2 class="text-4xl lg:text-7xl font-black text-white leading-tight">Our Academic Foundation</h2>
+        <p class="text-blue-50/80 text-base lg:text-lg leading-relaxed max-w-xl">
+            Implementing Kurikulum Merdeka to foster creativity, critical thinking, and independent learning in the next generation of global leaders.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 pt-4">
+            <button class="bg-primary text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:scale-105 transition-transform">
+                <span class="material-symbols-outlined">download</span> Download Prospectus
+            </button>
+            <button class="glass text-white px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-colors">
+                View Curriculum
+            </button>
+        </div>
+    </div>
+</section>
+<!-- Featured Programs -->
+<section class="space-y-8" id="programs">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div class="space-y-2">
+            <h3 class="text-3xl font-bold tracking-tight">Featured Programs</h3>
+            <p class="text-slate-500 dark:text-blue-400/60">Specialized tracks designed for the digital era.</p>
+        </div>
+        <a class="text-primary font-bold flex items-center gap-1 hover:underline" href="#">View all programs <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="glass p-8 rounded-3xl border border-blue-100 dark:border-blue-900/30 hover:shadow-xl hover:shadow-blue-500/5 transition-all group">
+            <div class="size-14 bg-blue-100 dark:bg-blue-900/50 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-3xl">terminal</span>
+            </div>
+            <h4 class="text-xl font-bold mb-3">Coding Academy</h4>
+            <p class="text-slate-600 dark:text-blue-100/60 leading-relaxed mb-6">
+                Developing logical thinking and digital literacy from an early age through Python, Web Dev, and Robotics.
+            </p>
+            <div class="h-1 w-full bg-blue-50 dark:bg-blue-900/20 rounded-full overflow-hidden">
+                <div class="h-full bg-primary w-3/4"></div>
+            </div>
+        </div>
+        <div class="glass p-8 rounded-3xl border border-blue-100 dark:border-blue-900/30 hover:shadow-xl hover:shadow-blue-500/5 transition-all group">
+            <div class="size-14 bg-blue-100 dark:bg-blue-900/50 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-3xl">translate</span>
+            </div>
+            <h4 class="text-xl font-bold mb-3">Bilingual Program</h4>
+            <p class="text-slate-600 dark:text-blue-100/60 leading-relaxed mb-6">
+                Mastering global communication through a comprehensive English-Indonesian immersion environment.
+            </p>
+            <div class="h-1 w-full bg-blue-50 dark:bg-blue-900/20 rounded-full overflow-hidden">
+                <div class="h-full bg-primary w-1/2"></div>
+            </div>
+        </div>
+        <div class="bg-primary/5 p-8 rounded-3xl border border-primary/20 flex flex-col justify-center items-center text-center space-y-4">
+            <span class="material-symbols-outlined text-5xl text-primary/40">add_circle</span>
+            <h4 class="text-xl font-bold text-primary">And More</h4>
+            <p class="text-slate-500 dark:text-blue-400/60 text-sm">Visual Arts, Performing Music, and Science Lab Research.</p>
+        </div>
+    </div>
+</section>
+<!-- Academic Calendar Section -->
+<section class="glass rounded-[2rem] overflow-hidden border border-blue-100 dark:border-blue-900/30" id="calendar">
+    <div class="grid grid-cols-1 lg:grid-cols-3">
+        <div class="p-8 lg:p-12 bg-primary text-white space-y-6">
+            <h3 class="text-3xl font-black">Academic Calendar 2024</h3>
+            <p class="text-blue-50/80">Stay updated with our semester schedules, public holidays, and special school events.</p>
+            <div class="space-y-4 pt-4">
+                <div class="flex items-center gap-4 bg-white/10 p-4 rounded-xl">
+                    <span class="material-symbols-outlined">event_available</span>
+                    <div>
+                        <p class="text-xs font-bold uppercase opacity-60">Next Event</p>
+                        <p class="font-bold">Science Fair - Oct 24</p>
+                    </div>
+                </div>
+                <button class="w-full bg-white text-primary font-black py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-blue-50 transition-colors">
+                    <span class="material-symbols-outlined">picture_as_pdf</span> Download Full PDF
+                </button>
+            </div>
+        </div>
+        <div class="lg:col-span-2 p-8 lg:p-12 space-y-6">
+            <h4 class="text-xl font-bold">Upcoming Key Dates</h4>
+            <div class="space-y-4">
+                <div class="flex items-center justify-between p-4 rounded-2xl border border-blue-50 dark:border-blue-900/20 hover:bg-blue-50/50 dark:hover:bg-blue-900/10 transition-colors">
+                    <div class="flex items-center gap-4">
+                        <div class="size-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 text-primary flex flex-col items-center justify-center font-bold text-xs">
+                            <span>AUG</span>
+                            <span class="text-lg">15</span>
+                        </div>
+                        <div>
+                            <p class="font-bold">First Semester Begins</p>
+                            <p class="text-sm text-slate-500">Orientation for new students</p>
+                        </div>
+                    </div>
+                    <span class="material-symbols-outlined text-slate-400">chevron_right</span>
+                </div>
+                <div class="flex items-center justify-between p-4 rounded-2xl border border-blue-50 dark:border-blue-900/20 hover:bg-blue-50/50 dark:hover:bg-blue-900/10 transition-colors">
+                    <div class="flex items-center gap-4">
+                        <div class="size-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 text-primary flex flex-col items-center justify-center font-bold text-xs">
+                            <span>SEP</span>
+                            <span class="text-lg">02</span>
+                        </div>
+                        <div>
+                            <p class="font-bold">National Independence Day Break</p>
+                            <p class="text-sm text-slate-500">School closed for observance</p>
+                        </div>
+                    </div>
+                    <span class="material-symbols-outlined text-slate-400">chevron_right</span>
+                </div>
+                <div class="flex items-center justify-between p-4 rounded-2xl border border-blue-50 dark:border-blue-900/20 hover:bg-blue-50/50 dark:hover:bg-blue-900/10 transition-colors">
+                    <div class="flex items-center gap-4">
+                        <div class="size-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 text-primary flex flex-col items-center justify-center font-bold text-xs">
+                            <span>OCT</span>
+                            <span class="text-lg">24</span>
+                        </div>
+                        <div>
+                            <p class="font-bold">Rama Annual Science Fair</p>
+                            <p class="text-sm text-slate-500">Student research presentation</p>
+                        </div>
+                    </div>
+                    <span class="material-symbols-outlined text-slate-400">chevron_right</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Digital Library Preview -->
+<section class="space-y-8" id="library">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div class="space-y-2">
+            <h3 class="text-3xl font-bold tracking-tight">Digital Library</h3>
+            <p class="text-slate-500 dark:text-blue-400/60">24/7 access to thousands of educational resources.</p>
+        </div>
+        <button class="bg-primary/10 text-primary font-bold px-6 py-2.5 rounded-xl flex items-center gap-2 hover:bg-primary/20 transition-colors">
+            <span class="material-symbols-outlined">menu_book</span> Explore Library
+        </button>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+<!-- Book Card 1 -->
+<div class="group cursor-pointer">
+    <div class="aspect-[3/4] rounded-xl overflow-hidden mb-3 relative shadow-lg">
+        <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Cover of a modern science textbook" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXHf0g831YGD9ircstqUQkyq_dWbMYxvPqJtGXAl1LupBmQ_sFjkJiidgeNR9t9v50FyYfZjYY3hEGaRfv19asX_sGpHTm312vDe7Zdn9FpCm0GQAO6KhKLPIEzdtYZKUVNsGdMqF7ZJpyXu2dK35SVZkYP3eqIMAodL5YFYfGkb8eiJmlK384O0Sd52bANV7SlmDF0Gbb1nmPhdfJDMl3gH5ei3rKT1PSMYf48Q4QwprPNNMEolFoTBYfiScwOlncU9zQcOYhd7cM"/>
+    </div>
+    <p class="font-bold text-sm truncate">Advanced Physics</p>
+    <p class="text-xs text-slate-500">Grade 11 • PDF</p>
+</div>
+<!-- Book Card 2 -->
+<div class="group cursor-pointer">
+    <div class="aspect-[3/4] rounded-xl overflow-hidden mb-3 relative shadow-lg">
+        <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Old classic literature book cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANWwnMseMB9RvnBJW2iGUz6pwAQdp6974qMvx3ftef2nbF0GE3tonwRFdPsF4SFEC2VIlL7UxnDTGv-lf5nC5N9HNRNDppZ-9fts7PlcXQNm1vT8yo8bgf2P8RWicYGRZuwbqZNJ7ZUKw7X9hCdK3FSuSxkmGZp5kiQLEuXDcWr8liZETf6lWOo69EsaEtGWB9AmsIPpKxjao9FgbF1WasMEwUOrPwJsnjycoWJdO3bBJSqnrE3kul2tlMXOLM1hsQySUojkHLcFPT"/>
+    </div>
+    <p class="font-bold text-sm truncate">World History</p>
+    <p class="text-xs text-slate-500">Grade 10 • E-Pub</p>
+</div>
+<!-- Book Card 3 -->
+<div class="group cursor-pointer">
+    <div class="aspect-[3/4] rounded-xl overflow-hidden mb-3 relative shadow-lg">
+        <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Creative arts and design book cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5_rCCxS1Gsb8GvmcCPVmoPrm_K52tUZAgNwcFUohTgxqWrQeDYyVncuG9JXHTNYEcFEmUqKouM7hK2i3nRFIAANnLmUxlqjthlGUprENhBQNfzgWLv2eBHZXPX156VEiTIIQAJ8lXCNIV7gzsGKOSKd0hAV2apLcTviM-BFlahdJqHVmN5vjXaapqTkz4EMoa-t4bLz_Eip0tfigwpS8evF_3SDN1xfH1kBsKuKadAEC7UERhzz1qj4tJ5RF8-0cc4brcwaz_U4fL"/>
+    </div>
+    <p class="font-bold text-sm truncate">Creative Coding</p>
+    <p class="text-xs text-slate-500">Elective • PDF</p>
+</div>
+<!-- Book Card 4 -->
+<div class="group cursor-pointer">
+    <div class="aspect-[3/4] rounded-xl overflow-hidden mb-3 relative shadow-lg">
+        <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Biology and nature book cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx1S3GCOjpa0Ieac9u4ok2Ys_66XcsWmEwSXxH9Crx-c3a0gPNGBlduyf5YuQD_vwKYIpynATlIuo0d5hxTumHvzUoS5dDjHb5xT1OYUs_yE8pDZ-GeYDXDl6ajSxVqyWxO5WYp29akTxf6VsLc1KtIfWxiadnloAdKA2we48LONRg4nwv0JK4v2YX5ogS3Dmw-8DLH4QNYjTIeuC10E4L3TseRjioraqvUJPvIvy7aS-jbNkgGuzWcAAYurSeYONSueYJCCcV3YyT"/>
+    </div>
+    <p class="font-bold text-sm truncate">Modern Biology</p>
+    <p class="text-xs text-slate-500">Grade 12 • E-Pub</p>
+</div>
+<!-- Book Card 5 -->
+<div class="group cursor-pointer">
+    <div class="aspect-[3/4] rounded-xl overflow-hidden mb-3 relative shadow-lg">
+        <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+        <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Linguistics and language learning book cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1EkGQJ2krFrSCEIV8RAS2j1WyxrOu5kichvA7kogOSIC5oyv4gq4cNhFohPK9JH-dVnXqu8SQTqCTPpN3t7_t03tJPxPuJZy-9Duhml3gcQNiQPk0vR8It4I2Y4mOW5dAFPb3nT5tPAnosqMvjASa8SCGYSlif2iNCsCTLC7nrkfiiHcQ_vheBF1HaYev26O-N9VQ6TbKaBuwh3Rkq4FvKUR22TVDcq7JR_sH-hZQgjJ7eBNeIPTeNR83KYjzrqH3GAyyKDEz3ypw"/>
+    </div>
+    <p class="font-bold text-sm truncate">Bilingual Studies</p>
+    <p class="text-xs text-slate-500">Grade 9 • Audio</p>
+</div>
+<!-- Book Card 6 -->
+<div class="group cursor-pointer flex flex-col items-center justify-center border-2 border-dashed border-blue-100 dark:border-blue-900/30 rounded-xl aspect-[3/4]">
+    <span class="material-symbols-outlined text-4xl text-blue-200">add_circle</span>
+    <p class="text-xs font-bold text-blue-400 mt-2">Browse More</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-blue-50 dark:bg-slate-950/20 border-t border-blue-100 dark:border-blue-900/30 mt-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-20 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div class="space-y-6">
+            <div class="flex items-center gap-3 text-primary">
+                <span class="material-symbols-outlined text-3xl">auto_awesome</span>
+                <h2 class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white">Rama Sejahtera</h2>
+            </div>
+            <p class="text-sm text-slate-500 dark:text-blue-400/60 leading-relaxed">
+                Excellence in education, character, and leadership through an innovative global curriculum.
+            </p>
+            <div class="flex gap-4">
+                <a class="size-10 rounded-full bg-white dark:bg-blue-900/30 border border-blue-100 dark:border-blue-900/50 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+                    <span class="material-symbols-outlined text-xl">language</span>
+                </a>
+                <a class="size-10 rounded-full bg-white dark:bg-blue-900/30 border border-blue-100 dark:border-blue-900/50 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+                    <span class="material-symbols-outlined text-xl">share</span>
+                </a>
+            </div>
+        </div>
+        <div>
+            <h5 class="font-bold mb-6">Academic</h5>
+            <ul class="space-y-4 text-sm text-slate-500 dark:text-blue-400/60">
+                <li><a class="hover:text-primary transition-colors" href="#">Kurikulum Merdeka</a></li>
+                <li><a class="hover:text-primary transition-colors" href="#">Student Assessment</a></li>
+                <li><a class="hover:text-primary transition-colors" href="#">Scholarships</a></li>
+                <li><a class="hover:text-primary transition-colors" href="#">Research Projects</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5 class="font-bold mb-6">Student Life</h5>
+            <ul class="space-y-4 text-sm text-slate-500 dark:text-blue-400/60">
+                <li><a class="hover:text-primary transition-colors" href="#">Extracurriculars</a></li>
+                <li><a class="hover:text-primary transition-colors" href="#">Student Council</a></li>
+                <li><a class="hover:text-primary transition-colors" href="#">Career Guidance</a></li>
+                <li><a class="hover:text-primary transition-colors" href="#">Alumni Network</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5 class="font-bold mb-6">Contact Us</h5>
+            <ul class="space-y-4 text-sm text-slate-500 dark:text-blue-400/60">
+                <li class="flex items-start gap-3">
+                    <span class="material-symbols-outlined text-primary text-lg">location_on</span>
+                    <span>Jl. Pendidikan No. 45, Jakarta Selatan</span>
+                </li>
+                <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary text-lg">call</span>
+                    <span>+62 21 555-0123</span>
+                </li>
+                <li class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary text-lg">mail</span>
+                    <span>info@ramasejahtera.sch.id</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 lg:px-20 py-8 border-t border-blue-100 dark:border-blue-900/30 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
+        <p>© 2024 Yayasan Rama Sejahtera. All rights reserved.</p>
+        <div class="flex gap-8">
+            <a class="hover:text-primary" href="#">Privacy Policy</a>
+            <a class="hover:text-primary" href="#">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+</body></html>

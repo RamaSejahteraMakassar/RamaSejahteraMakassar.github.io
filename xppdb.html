@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>PPDB - Yayasan Rama Sejahtera</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2563eb", // Vibrant Professional Blue
+                        "background-light": "#f8fafc",
+                        "background-dark": "#0f172a",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .dark .glass-card {
+            background: rgba(15, 23, 42, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 glass-card border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+            <div class="flex items-center gap-3">
+                <div class="p-2 bg-primary rounded-lg text-white">
+                    <span class="material-symbols-outlined block">school</span>
+                </div>
+                <h1 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">Rama Sejahtera</h1>
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Beranda</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="profil.html">Profil</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="akademik.html">Akademik</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="Kesiswaan.html">Kesiswaan</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="berita.html">Berita</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="kontak.html">Kontak</a>
+                <button class="bg-primary text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-opacity-90 transition-all shadow-lg shadow-primary/20">
+                    Daftar Online
+                </button>
+            </nav>
+<!-- Mobile Menu Toggle (Simplified) -->
+<button class="md:hidden p-2 text-slate-600 dark:text-slate-300">
+    <span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-10">
+<!-- Hero Section -->
+<section class="relative rounded-2xl md:rounded-3xl overflow-hidden mb-12 md:mb-16 shadow-2xl">
+    <div class="absolute inset-0 bg-cover bg-center" data-alt="Modern bright school building exterior architecture" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBCXrSUwYUsZ40UKZ5InP3FHOplPIg3K63f4fVDygbRxov_uEAG33M3e14Ha5PJ4FEeTXg9Hxb_PNmrbCs2h9MNwwML9V2DG2GjY2vk1Be8v9BYlS8hZWd1KXSvGkwb49JLynyVcONs7H2_gz4H9YiX7EtGj_oMQJZs6NAtpCW3GMRUpxsEbyLlfTh5WGGLkA_H-PaRhMYdN2aNvGm8ZFahEUtHfuYsAZ4fU-2C8C-XSQp9M8DgngI41q9dQsthfOlZLUhwRHJfAlJ9');">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/40"></div>
+    </div>
+    <div class="relative px-6 py-16 md:px-12 md:py-32 max-w-2xl">
+        <span class="inline-block px-4 py-1.5 rounded-full bg-primary/20 text-white border border-primary/30 text-xs font-bold uppercase tracking-widest mb-6 backdrop-blur-md">
+            Penerimaan Siswa Baru 2024/2025
+        </span>
+        <h2 class="text-3xl md:text-6xl font-bold text-white mb-6 leading-tight">Membangun Masa Depan Gemilang Bersama Kami</h2>
+        <p class="text-base md:text-lg text-blue-50 mb-10 leading-relaxed">
+            Bergabunglah dengan Yayasan Rama Sejahtera untuk pendidikan berkualitas yang mengutamakan karakter, inovasi, dan nilai-nilai luhur.
+        </p>
+        <div class="flex flex-col sm:flex-row flex-wrap gap-4">
+            <button class="bg-primary hover:bg-blue-500 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2">
+                Mulai Pendaftaran <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+            <button class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg backdrop-blur-md transition-all border border-white/30">
+                Download Brosur
+            </button>
+        </div>
+    </div>
+</section>
+<!-- Registration Flow -->
+<section class="mb-16 md:mb-20" id="alur">
+    <div class="text-center mb-10 md:mb-12">
+        <h3 class="text-2xl md:text-3xl font-bold mb-4">Alur Pendaftaran</h3>
+        <div class="w-20 h-1.5 bg-primary mx-auto rounded-full"></div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+<!-- Step 1 -->
+<div class="glass-card p-8 rounded-3xl relative text-center flex flex-col items-center group hover:border-primary/50 transition-all">
+    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+        <span class="material-symbols-outlined text-3xl">person_add</span>
+    </div>
+    <span class="absolute top-4 left-4 text-primary/20 text-5xl font-black">01</span>
+    <h4 class="text-lg font-bold mb-2">Registrasi Akun</h4>
+    <p class="text-slate-500 dark:text-slate-400 text-sm">Buat akun pada portal PPDB kami untuk memulai proses pendaftaran.</p>
+</div>
+<!-- Step 2 -->
+<div class="glass-card p-8 rounded-3xl relative text-center flex flex-col items-center group hover:border-primary/50 transition-all">
+    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+        <span class="material-symbols-outlined text-3xl">edit_note</span>
+    </div>
+    <span class="absolute top-4 left-4 text-primary/20 text-5xl font-black">02</span>
+    <h4 class="text-lg font-bold mb-2">Isi Formulir</h4>
+    <p class="text-slate-500 dark:text-slate-400 text-sm">Lengkapi data profil calon siswa dan unggah dokumen yang diperlukan.</p>
+</div>
+<!-- Step 3 -->
+<div class="glass-card p-8 rounded-3xl relative text-center flex flex-col items-center group hover:border-primary/50 transition-all">
+    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+        <span class="material-symbols-outlined text-3xl">payments</span>
+    </div>
+    <span class="absolute top-4 left-4 text-primary/20 text-5xl font-black">03</span>
+    <h4 class="text-lg font-bold mb-2">Pembayaran</h4>
+    <p class="text-slate-500 dark:text-slate-400 text-sm">Lakukan pembayaran biaya pendaftaran melalui bank transfer atau e-wallet.</p>
+</div>
+<!-- Step 4 -->
+<div class="glass-card p-8 rounded-3xl relative text-center flex flex-col items-center group hover:border-primary/50 transition-all">
+    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+        <span class="material-symbols-outlined text-3xl">verified</span>
+    </div>
+    <span class="absolute top-4 left-4 text-primary/20 text-5xl font-black">04</span>
+    <h4 class="text-lg font-bold mb-2">Verifikasi</h4>
+    <p class="text-slate-500 dark:text-slate-400 text-sm">Tunggu konfirmasi dari tim kami dan jadwal seleksi wawancara.</p>
+</div>
+</div>
+</section>
+<!-- Admission Requirements & Fees -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 mb-16 md:mb-20">
+<!-- Requirements -->
+<section id="syarat">
+    <h3 class="text-2xl font-bold mb-6 md:mb-8 flex items-center gap-3">
+        <span class="material-symbols-outlined text-primary">fact_check</span> Persyaratan Pendaftaran
+    </h3>
+    <div class="glass-card rounded-3xl p-6 md:p-8 space-y-6">
+        <div class="flex gap-4">
+            <div class="mt-1 text-primary"><span class="material-symbols-outlined">check_circle</span></div>
+            <div>
+                <p class="font-bold">Fotokopi Akte Kelahiran</p>
+                <p class="text-sm text-slate-500">2 Lembar dilegalisir</p>
+            </div>
+        </div>
+        <div class="flex gap-4">
+            <div class="mt-1 text-primary"><span class="material-symbols-outlined">check_circle</span></div>
+            <div>
+                <p class="font-bold">Kartu Keluarga (KK)</p>
+                <p class="text-sm text-slate-500">1 Lembar fotokopi</p>
+            </div>
+        </div>
+        <div class="flex gap-4">
+            <div class="mt-1 text-primary"><span class="material-symbols-outlined">check_circle</span></div>
+            <div>
+                <p class="font-bold">Ijazah Terakhir / SKL</p>
+                <p class="text-sm text-slate-500">Bagi pendaftar tingkat SMP/SMA</p>
+            </div>
+        </div>
+        <div class="flex gap-4">
+            <div class="mt-1 text-primary"><span class="material-symbols-outlined">check_circle</span></div>
+            <div>
+                <p class="font-bold">Pas Foto 3x4</p>
+                <p class="text-sm text-slate-500">4 Lembar dengan latar merah</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Tuition Fees -->
+<section id="biaya">
+    <h3 class="text-2xl font-bold mb-6 md:mb-8 flex items-center gap-3">
+        <span class="material-symbols-outlined text-primary">account_balance_wallet</span> Rincian Biaya
+    </h3>
+    <div class="glass-card rounded-3xl overflow-hidden overflow-x-auto">
+        <table class="w-full text-left min-w-[300px]">
+            <thead class="bg-primary/5">
+                <tr>
+                    <th class="px-6 py-4 font-bold text-sm uppercase">Komponen Biaya</th>
+                    <th class="px-6 py-4 font-bold text-sm uppercase text-right">Besaran</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200 dark:divide-slate-800">
+                <tr>
+                    <td class="px-6 py-4 text-sm">Pendaftaran</td>
+                    <td class="px-6 py-4 text-sm font-bold text-right">Rp 250.000</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-sm">Uang Pangkal (Gedung)</td>
+                    <td class="px-6 py-4 text-sm font-bold text-right">Rp 4.500.000</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-sm">Seragam &amp; Buku (Paket)</td>
+                    <td class="px-6 py-4 text-sm font-bold text-right">Rp 1.800.000</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-sm">SPP Juli 2024</td>
+                    <td class="px-6 py-4 text-sm font-bold text-right">Rp 450.000</td>
+                </tr>
+            </tbody>
+            <tfoot class="bg-slate-50 dark:bg-slate-900/50">
+                <tr>
+                    <td class="px-6 py-4 font-bold">Total Estimasi</td>
+                    <td class="px-6 py-4 font-bold text-right text-primary text-lg">Rp 7.000.000</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</section>
+</div>
+<!-- CTA Section -->
+<section class="glass-card rounded-[2rem] md:rounded-[3rem] p-8 md:p-12 text-center border-2 border-primary/20 relative overflow-hidden">
+    <div class="absolute -top-24 -right-24 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+    <h3 class="text-2xl md:text-3xl font-bold mb-6 relative">Siap Menjadi Bagian dari Kami?</h3>
+    <p class="text-base md:text-lg text-slate-500 dark:text-slate-400 mb-10 max-w-xl mx-auto relative">
+        Pendaftaran online dibuka hingga 30 Juni 2024. Kuota terbatas untuk setiap angkatan. Segera daftarkan diri Anda hari ini!
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4 relative">
+        <a class="bg-primary hover:bg-blue-500 text-white px-8 md:px-10 py-4 rounded-2xl font-bold text-lg shadow-xl shadow-primary/20 transition-all text-center" href="#">
+            Daftar Sekarang
+        </a>
+        <a class="bg-white dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 px-8 md:px-10 py-4 rounded-2xl font-bold text-lg flex items-center justify-center gap-2 hover:bg-slate-50 transition-all" href="https://wa.me/628123456789">
+            <span class="material-symbols-outlined text-blue-500">chat</span> Hubungi Admin
+        </a>
+    </div>
+</section>
+</main>
+<footer class="mt-16 md:mt-20 border-t border-slate-200 dark:border-slate-800 py-12 glass-card">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex items-center gap-3">
+            <div class="p-1.5 bg-primary rounded text-white">
+                <span class="material-symbols-outlined text-sm">school</span>
+            </div>
+            <span class="font-bold">Yayasan Rama Sejahtera</span>
+        </div>
+        <p class="text-sm text-slate-500 text-center md:text-left">© 2024 Yayasan Rama Sejahtera. All rights reserved.</p>
+        <div class="flex gap-6">
+            <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+            <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+            <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">share_location</span></a>
+        </div>
+    </div>
+</footer>
+</body></html>

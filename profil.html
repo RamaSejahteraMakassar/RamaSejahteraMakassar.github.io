@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Yayasan Rama Sejahtera - School Profile</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2563eb", /* Vibrant Professional Blue (Blue 600) */
+                        "background-light": "#f8fafc", /* Slate 50 tint */
+                        "background-dark": "#0f172a", /* Slate 900 */
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .dark .glass {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+    <div class="relative flex min-h-screen flex-col overflow-x-hidden">
+<!-- Navigation Bar -->
+<header class="sticky top-0 z-50 w-full px-4 lg:px-40 py-4 glass">
+    <div class="max-w-[1200px] mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <div class="size-10 bg-primary rounded-xl flex items-center justify-center text-white shadow-lg shadow-primary/20">
+                <span class="material-symbols-outlined">school</span>
+            </div>
+            <div>
+                <h1 class="text-slate-900 dark:text-white text-lg font-bold leading-none">Yayasan Rama Sejahtera</h1>
+                <span class="text-xs font-semibold text-primary uppercase tracking-wider">Academic Excellence</span>
+            </div>
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Beranda</a>
+            <a class="text-sm font-semibold text-primary" href="profil.html">Profil</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="akademik.html">Akademik</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="Kesiswaan.html">Kesiswaan</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="berita.html">Berita</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="kontak.html">Kontak</a>
+        </nav>
+        <div class="flex items-center gap-3">
+            <button class="p-2 rounded-xl bg-slate-200/50 dark:bg-slate-700/50 hover:bg-primary/20 hover:text-primary transition-all">
+                <span class="material-symbols-outlined block">notifications</span>
+            </button>
+            <div class="h-10 w-10 rounded-full border-2 border-primary overflow-hidden">
+                <img alt="User profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVGmEFNhKsLinn-mPZYXMIypHj5knl4xcZl4YyrKaywFGOpdP7jLuAT7FyGaZGVqyFCfidfTxgR4HuyJUJKHDM7RdHZjEmWC3vuuMpT9unEhmEzP9fXdevyd5wL7d4v-sOMYAdK38qYgsF4h6BjMBhotsVhY7OhSrzicg2uXyurF5nm491d5V1QsnTqaDnK9SXudPcRo8az90aSOIPJFH-yQ7ZNe03hF1PtQiKEal5ZKSpt08CA-f1BlzCt_nS3aUhgOLZaZ-h7vfO"/>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="flex-1 w-full max-w-[1200px] mx-auto px-4 py-8 space-y-12 sm:space-y-16">
+<!-- Hero Section -->
+<section class="relative rounded-3xl overflow-hidden min-h-[400px] md:min-h-[500px] flex items-end p-6 sm:p-8 lg:p-12 shadow-2xl">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: linear-gradient(to top, rgba(15, 23, 42, 0.9), rgba(0,0,0,0.1)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuB7JOA37T0lEbvBH_1zrB9FANCE9zle1NnQDdEE28FZPoX7U1w_5wPSTfYBaiKqMYWYYejgHD0rWnugkBWneqoDFRic_UznnLsQi9zXR_hwkNO8zKNo015-VyU9lDBUcaWpTZ2HURxfdIkwrpYlBu9M35u9GxU4adZ2mqQ1qcyboiT_lISpiHb2Q36MtnJWzZckuPWZfhN3j8LWMr5JDTCONl1CrWcn-qFZMVqqf7iycblr3FF8oXdFjEfNm80Z4l9beHIkcVbZopkx');"></div>
+    <div class="relative z-10 max-w-2xl text-white">
+        <span class="inline-block px-4 py-1 rounded-full bg-primary/30 backdrop-blur-md border border-white/20 text-xs sm:text-sm font-bold mb-4">EST. 1995</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-6xl font-black mb-4 leading-tight">Nurturing Leaders, Inspiring Greatness</h2>
+        <p class="text-slate-100 text-base sm:text-lg opacity-90 mb-6 max-w-lg">A legacy built on character, academic rigor, and a commitment to professional excellence.</p>
+        <button class="w-full sm:w-auto bg-primary hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-xl transition-all shadow-xl shadow-primary/30">Learn Our Story</button>
+    </div>
+</section>
+<!-- Vision & Mission (Glassmorphism Cards) -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-6" id="vision">
+    <div class="glass p-6 sm:p-8 rounded-3xl space-y-4 shadow-sm border border-slate-100 dark:border-slate-800">
+        <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-2">
+            <span class="material-symbols-outlined text-3xl">visibility</span>
+        </div>
+        <h3 class="text-2xl font-bold text-slate-800 dark:text-slate-50">Our Vision</h3>
+        <p class="text-slate-600 dark:text-slate-300 leading-relaxed italic text-base sm:text-lg">
+            "To be a global benchmark for holistic education that integrates technological innovation with sustainable human values."
+        </p>
+    </div>
+    <div class="glass p-6 sm:p-8 rounded-3xl space-y-4 shadow-sm border border-slate-100 dark:border-slate-800">
+        <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-2">
+            <span class="material-symbols-outlined text-3xl">flag</span>
+        </div>
+        <h3 class="text-2xl font-bold text-slate-800 dark:text-slate-50">Our Mission</h3>
+        <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary mt-1 text-xl">check_circle</span>
+                <span class="text-slate-600 dark:text-slate-300 text-sm sm:text-base">Providing an inclusive environment that fosters intellectual curiosity.</span>
+            </li>
+            <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary mt-1 text-xl">check_circle</span>
+                <span class="text-slate-600 dark:text-slate-300 text-sm sm:text-base">Implementing future-ready campus initiatives as a lifestyle.</span>
+            </li>
+            <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary mt-1 text-xl">check_circle</span>
+                <span class="text-slate-600 dark:text-slate-300 text-sm sm:text-base">Equipping students with skills through project-based learning.</span>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- Detailed History -->
+<section class="py-4" id="history">
+    <div class="flex flex-col md:flex-row gap-8 lg:gap-12 items-center">
+        <div class="w-full md:w-1/2 space-y-6 order-2 md:order-1">
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white border-l-4 border-primary pl-4">Decades of Excellence</h2>
+            <div class="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed text-sm sm:text-base">
+                <p>Founded in 1995 by Dr. Rama Sejahtera, our foundation began with a simple dream: to provide high-quality education that remains accessible to the community. What started as a small primary school with 40 students has flourished into a comprehensive educational complex.</p>
+                <p>In 2010, the foundation achieved national accreditation "A" and pioneered the "Academic Excellence Curriculum," which focuses on emotional intelligence and professional ethics. Today, we are home to over 1,500 students from various backgrounds, all striving for excellence.</p>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 h-[250px] sm:h-[300px] lg:h-[400px] rounded-3xl overflow-hidden relative shadow-xl order-1 md:order-2">
+            <img alt="School History" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1YsyN28Z5Z-_7KUXHZ-mI7407A-7K2Xhk22KapZOp8As063LBCn1pudSImyJoPInXgecf5P2niTtYNPavhVo-ZcipbQuB6whKMIQdgNUuMH035hw2azJYDQx1Gkq-Nbe3Shg4AMPyPPM36g92lVDDsktETPY8hv0rrmDgzc3kuPoPGK0bhIcV6eeKaNfnM0Kti5v976lN2NiykCc8fn-JDnSGEVVs0ViOzIZEL13NB9OsVl_a0FBZ__9iyIJ41Nuy19AuLRloYohd"/>
+            <div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Educators Section -->
+<section id="educators">
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4">
+        <div>
+            <h2 class="text-2xl sm:text-3xl font-bold">Our Distinguished Educators</h2>
+            <p class="text-slate-500 dark:text-slate-400 mt-1 text-sm sm:text-base">The minds shaping the future of Rama Sejahtera.</p>
+        </div>
+        <button class="flex items-center gap-2 text-primary font-bold hover:underline text-sm sm:text-base group">
+            View All Staff <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+        </button>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Educator Card 1 -->
+<div class="group glass rounded-2xl overflow-hidden hover:shadow-xl transition-all border border-slate-50 dark:border-slate-800">
+    <div class="h-64 sm:h-72 overflow-hidden">
+        <img alt="Educator" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyR8QiBzzhlEvv_bHNAUMcTHHIKpBgBZgIzkTOlBKO1NYCz3DderDx6BUAAIM7p9Y3k-3XlW7dfnxGpetg5QjCeJgsUUforIDnVjYcda0aNPS3fROynxTCXO-4ORG9rcgAsMvLieb9oC5eJfJIZmunGNNQOyqwsx6F9FzRAyqk_iXIzxJcLm_BK4wZetlb7vGseg7HPq7qpjsQrgdWNB-bUqpruUVDkRe7h6deCL17BbE_KJ_Y2pIGI6nR0lqwV1GCpxUoOUKIaiG6"/>
+    </div>
+    <div class="p-5">
+        <h4 class="font-bold text-lg text-slate-800 dark:text-white">Dian Sastrowardoyo</h4>
+        <p class="text-primary text-sm font-medium mb-3">Head of Mathematics</p>
+        <div class="flex gap-2">
+            <span class="px-2 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded uppercase">12 yrs Exp</span>
+            <span class="px-2 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded uppercase">M.Sc</span>
+        </div>
+    </div>
+</div>
+<!-- Educator Card 2 -->
+<div class="group glass rounded-2xl overflow-hidden hover:shadow-xl transition-all border border-slate-50 dark:border-slate-800">
+    <div class="h-64 sm:h-72 overflow-hidden">
+        <img alt="Educator" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIhXswC1A3NftMTkCVrO7qOxTZnyC5a7rimJPmQwiEa4fFMt6PliQE8YoEOUJyh-Mh3wuAEtA2jQWMqGkmi1lrFp3j3HJNJfFNfLQV10pnLU3BFhQp0ymzbD8O8AFuDCATkxKWgB5MugUePClVaakhCL_ro8Y42HCN9KfGAMPZreEC3COZQCdAQPG4KB2sizaTgzORIlFokPs51NjfHt7-6ClsUMppH1LY0r5OYCY80CIsPoZTO5FYAZldsglHCVn_KVzWu07dBmfu"/>
+    </div>
+    <div class="p-5">
+        <h4 class="font-bold text-lg text-slate-800 dark:text-white">Irwan Syahputra</h4>
+        <p class="text-primary text-sm font-medium mb-3">Art &amp; Design Lead</p>
+        <div class="flex gap-2">
+            <span class="px-2 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded uppercase">8 yrs Exp</span>
+            <span class="px-2 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded uppercase">B.FA</span>
+        </div>
+    </div>
+</div>
+<!-- Educator Card 3 -->
+<div class="group glass rounded-2xl overflow-hidden hover:shadow-xl transition-all border border-slate-50 dark:border-slate-800">
+    <div class="h-64 sm:h-72 overflow-hidden">
+        <img alt="Educator" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA691WYKUiOgJtW4IsE0lUbMDdKi75gvP9LFWWxfAuEyZ89sosG4uclqS1dpKJAIDCUKJPslnTnRJGSOEdgWfq73pXnx-o3AejcCOoWpUvxNoa5LJI9S9s0oy5vXSZfe9Szv9323Xpdx-DQfXuJoYy2unvNqfqhbCmdQ2ppERjzExbjyagGT_RmBgouQ3qi7tQbsbPa4j5bjOFurY0d3vFj0oprMHcRZeqvwC7uqwChSpsZP_KjCdMByBfYXKS6_YL57TuQ_J0CjsX_"/>
+    </div>
+    <div class="p-5">
+        <h4 class="font-bold text-lg text-slate-800 dark:text-white">Maya Kusuma</h4>
+        <p class="text-primary text-sm font-medium mb-3">Physics Specialist</p>
+        <div class="flex gap-2">
+            <span class="px-2 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded uppercase">5 yrs Exp</span>
+            <span class="px-2 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded uppercase">M.Ed</span>
+        </div>
+    </div>
+</div>
+<!-- Educator Card 4 -->
+<div class="group glass rounded-2xl overflow-hidden hover:shadow-xl transition-all border border-slate-50 dark:border-slate-800">
+    <div class="h-64 sm:h-72 overflow-hidden">
+        <img alt="Educator" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe-BsPbaJkswB64dMnFLbG63YBzEqcvAzAy2M8fSBwHHo-NgPs0zIGBpmXtMp958m3ow_EQa3xgz2DMJYOL4bEaJgYb6O38mJ0qizLOmO1B7P6keggsNu73lh0B9FKkUr1zfxKmhMwJ0lJoEdYsogCpw5JTcXMcy5I5SDKK5D6HiE5l94TtS-nAu2A9oE3KJ2Lb8G6D6igbYDqG3S3oWkwEw_PvniK6PEGuaj4q0WuIuN-q3H2t4P3-zhpQLUH9tqC2NVQ7FtzCVnT"/>
+    </div>
+    <div class="p-5">
+        <h4 class="font-bold text-lg text-slate-800 dark:text-white">Hadi Pratama</h4>
+        <p class="text-primary text-sm font-medium mb-3">Athletics Director</p>
+        <div class="flex gap-2">
+            <span class="px-2 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded uppercase">15 yrs Exp</span>
+            <span class="px-2 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded uppercase">B.Sp</span>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="mt-20 glass border-t border-slate-100 dark:border-slate-800 pt-16 pb-8">
+    <div class="max-w-[1200px] mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 mb-12">
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+                        <span class="material-symbols-outlined text-sm">school</span>
+                    </div>
+                    <h3 class="font-bold text-lg">Rama Sejahtera</h3>
+                </div>
+                <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Building the future of education with a commitment to sustainable growth and academic excellence.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-300">
+                    <li><a class="hover:text-primary transition-colors" href="#">Admission</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Student Portal</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Alumni Network</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Contact</h4>
+                <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-300">
+                    <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">location_on</span> Jl. Emerald No. 88, Jakarta</li>
+                    <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">mail</span> info@ramasejahtera.org</li>
+                    <li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">call</span> +62 21 555 1234</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4">Follow Us</h4>
+                <div class="flex gap-4">
+                    <a class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+                        <span class="material-symbols-outlined text-sm">public</span>
+                    </a>
+                    <a class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+                        <span class="material-symbols-outlined text-sm">alternate_email</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-slate-200 dark:border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
+            <p>© 2024 Yayasan Rama Sejahtera. All rights reserved.</p>
+            <div class="flex gap-4">
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[10px]">location_on</span> Indonesia</span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</body></html>

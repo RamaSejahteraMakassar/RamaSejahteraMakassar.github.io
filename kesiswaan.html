@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Student Life - Yayasan Rama Sejahtera</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#2563eb",
+            "primary-dark": "#1e40af",
+            "primary-light": "#60a5fa",
+            "background-light": "#f8fafc",
+            "background-dark": "#0f172a",
+          },
+          fontFamily: {
+            "display": ["Public Sans", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+  <style>
+    .glass {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    .dark .glass {
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid rgba(37, 99, 235, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+  <div class="relative w-full overflow-x-hidden">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 glass px-4 sm:px-6 lg:px-20 py-4 flex items-center justify-between border-b border-primary/10">
+  <div class="flex items-center gap-4 lg:gap-8">
+    <div class="flex items-center gap-2 sm:gap-3 text-primary">
+      <span class="material-symbols-outlined text-2xl sm:text-3xl font-bold">star_rate</span>
+      <h2 class="text-slate-900 dark:text-white text-lg sm:text-xl font-bold leading-tight tracking-tight whitespace-nowrap">Rama Sejahtera</h2>
+    </div>
+    <nav class="hidden md:flex items-center gap-6 lg:gap-8">
+     <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Beranda</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="profil.html">Profil</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="akademik.html">Akademik</a>
+            <a class="text-sm font-semibold text-primary" href="Kesiswaan.html">Kesiswaan</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="berita.html">Berita</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="kontak.html">Kontak</a>
+    </nav>
+  </div>
+  <div class="flex items-center gap-3 sm:gap-4">
+    <div class="relative hidden sm:block">
+      <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm">search</span>
+      <input class="pl-10 pr-4 py-2 bg-slate-100 dark:bg-slate-800 border-none rounded-full text-sm focus:ring-2 focus:ring-primary/50 w-40 lg:w-64" placeholder="Search activities..." type="text"/>
+    </div>
+    <div class="size-9 sm:size-10 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20 overflow-hidden flex-shrink-0">
+      <img alt="Profile" data-alt="Student profile avatar placeholder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ2M2TayNcwYOo_-VaMCMhelpvJGjRn3u7eLChkvno5JETPWwTLHG5ZMaIwgPKNABaIj8q28DzC578wHEgiO-i6Z89mvZs9hA25cmrGrYpJd_Bj4WqXXdURJk6APCFBdMEAWDZM7cNevVxfJsKjg-plPv_HtF95f3_Pd2Bb4iNPgKEjM3KlbrT1BfVLmKnMDGdYp1cxippDtoIqXy_EaZsNYebHVAft6z1IDe8_fzUI-d0LQbnAgRqdHQspnnknpL1VNiAXiHx4UfL"/>
+    </div>
+  </div>
+</header>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+<!-- Hero Banner -->
+<section class="relative rounded-xl sm:rounded-2xl overflow-hidden mb-8 sm:mb-12 h-64 sm:h-80 flex items-end">
+  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent z-10"></div>
+  <div class="absolute inset-0 bg-cover bg-center" data-alt="Cheerful students gathering in front of a modern school building" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDUZwkSKT-l7I3qZxdfIRYWzfdJNV-sqZwUDf0zEgNnswvbJ9QzteM2vGnSTa8jt5G5A3dApdVbWdZzTPsX3mX1u-hf2mtrwgTT1_vkSDnbIcbOyka9Q3lhArIJah1hjCfvud4I8t0r8DxW7v-E9-ERjCX9_MqIPUIL8zapFzs52YTwhq6tnH7B3j4gRt1PNZpP1hPPUoKzIkiig1RQt98iuCsAcOO13qvCJWF6snQHwX_jIJHK-0-usfejIuSp_rWrAtpbgWvJQAcA')"></div>
+  <div class="relative z-20 p-6 sm:p-8 lg:p-12 w-full">
+    <span class="bg-primary text-white text-[10px] sm:text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest mb-3 inline-block">Explore</span>
+    <h1 class="text-white text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">Student Life <span class="text-primary-light font-medium">(Kesiswaan)</span></h1>
+    <p class="text-slate-200 mt-2 max-w-xl text-sm sm:text-base">Fostering character, creativity, and leadership through a vibrant community and diverse extracurricular programs.</p>
+  </div>
+</section>
+<!-- Extra-curricular Clubs Section -->
+<section class="mb-12 sm:mb-16">
+  <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-6 sm:mb-8 gap-4">
+    <div>
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Extra-curricular Clubs</h2>
+      <p class="text-slate-500 dark:text-slate-400 text-sm">Join our diverse community and find your passion</p>
+    </div>
+    <button class="text-primary font-semibold flex items-center gap-1 hover:underline text-sm sm:text-base w-fit">
+      View All <span class="material-symbols-outlined text-base">chevron_right</span>
+    </button>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+<!-- Scouts -->
+<div class="glass p-5 sm:p-6 rounded-xl hover:shadow-lg transition-all group border-b-4 border-b-primary/0 hover:border-b-primary">
+  <div class="size-12 rounded-lg bg-blue-100 dark:bg-blue-900/30 text-primary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+    <span class="material-symbols-outlined text-3xl">scuba_diving</span>
+  </div>
+  <h3 class="text-lg font-bold mb-2">Scouts (Pramuka)</h3>
+  <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Building discipline, leadership skills, and a strong sense of national character through outdoor activities.</p>
+</div>
+<!-- OSIS -->
+<div class="glass p-5 sm:p-6 rounded-xl hover:shadow-lg transition-all group border-b-4 border-b-primary/0 hover:border-b-primary">
+  <div class="size-12 rounded-lg bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+    <span class="material-symbols-outlined text-3xl">diversity_3</span>
+  </div>
+  <h3 class="text-lg font-bold mb-2">OSIS</h3>
+  <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">The student executive organization representing your voice and managing student-led events throughout the year.</p>
+</div>
+<!-- Sports -->
+<div class="glass p-5 sm:p-6 rounded-xl hover:shadow-lg transition-all group border-b-4 border-b-primary/0 hover:border-b-primary">
+  <div class="size-12 rounded-lg bg-sky-100 dark:bg-sky-900/30 text-sky-600 dark:text-sky-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+    <span class="material-symbols-outlined text-3xl">sports_basketball</span>
+  </div>
+  <h3 class="text-lg font-bold mb-2">Sports Club</h3>
+  <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">From basketball to football and badminton. Aiming for health, teamwork, and championship titles.</p>
+</div>
+<!-- Arts -->
+<div class="glass p-5 sm:p-6 rounded-xl hover:shadow-lg transition-all group border-b-4 border-b-primary/0 hover:border-b-primary">
+  <div class="size-12 rounded-lg bg-violet-100 dark:bg-violet-900/30 text-violet-600 dark:text-violet-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+    <span class="material-symbols-outlined text-3xl">palette</span>
+  </div>
+  <h3 class="text-lg font-bold mb-2">Arts &amp; Culture</h3>
+  <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Express yourself through traditional dance, music, theater, and modern visual arts programs.</p>
+</div>
+</div>
+</section>
+<!-- Student Achievements Gallery -->
+<section class="mb-12 sm:mb-16 bg-slate-100/50 dark:bg-slate-900/30 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12">
+  <div class="flex flex-col items-center text-center mb-8 sm:mb-12">
+    <span class="material-symbols-outlined text-primary text-4xl sm:text-5xl mb-3 sm:mb-4">emoji_events</span>
+    <h2 class="text-2xl sm:text-3xl font-bold">Hall of Fame</h2>
+    <p class="text-slate-500 dark:text-slate-400 max-w-md mx-auto mt-2 text-sm sm:text-base">Celebrating the exceptional accomplishments of our brilliant students in various competitions.</p>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+<!-- Achievement 1 -->
+<div class="bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+  <div class="aspect-video sm:h-48 rounded-xl bg-slate-100 dark:bg-slate-700 mb-4 overflow-hidden">
+    <img alt="National Science Bowl" class="w-full h-full object-cover" data-alt="Student holding a golden trophy after a competition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAK2FpBXuRcR45us8I_OkPzYt8v0PDhSMKGYkFTbq2xt5lWBUbUXgktKtuwL_-nw5uCiFE_6IU8qdX5WAIHoY4SlLxWf1ZJVar-QBwi54VaNHIu9nq1xnAqAbBLnxScmZzPWl-ZyQTElg2zEjPjfwHJiT2p3XtZSqUv3aueTrQjtI48kTjHWhMHBtm0mo76sLr7gaROMPcQEZErbVABFm3TCROhAVUA5du0wwsEMWSiMS2bC055G3HBVbwqsOcNLlMBctJGvYa7NAh5"/>
+  </div>
+  <div class="flex items-start justify-between">
+    <div>
+      <h4 class="font-bold text-lg">National Science Bowl</h4>
+      <p class="text-primary font-medium text-sm">1st Place - Gold Medal</p>
+      <p class="text-slate-500 text-xs mt-1">Awarded to: <span class="font-semibold">Adrian Wijaya</span></p>
+    </div>
+    <span class="material-symbols-outlined text-amber-500">military_tech</span>
+  </div>
+</div>
+<!-- Achievement 2 -->
+<div class="bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+  <div class="aspect-video sm:h-48 rounded-xl bg-slate-100 dark:bg-slate-700 mb-4 overflow-hidden">
+    <img alt="Regional Music Fest" class="w-full h-full object-cover" data-alt="A student performing on stage with a musical instrument" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0varQK2VsJRiRcBtb4b8tBfo56HlmoCmHBXA82p-L6WR1GsB_97SNI1UHeTaeGWUTI7RvvmyIINOZOHjbLC_sf91ETmqlgF9q_R58JN6CWp-6uGc-USMjGcXVPIvnrMs5UifcBc6OjB4tDu38cYKKz7jB_nojqD1CUEXHxu1yaJg2w6VZHNNAsM6pJY_z9xP7zWXMPy-PsoaTyOFTcY0ndK3DtpeCLn6itRSgm2HzpL4WABURFvUBO0LymBa87-Y7QwiFqeBUFqUz"/>
+  </div>
+  <div class="flex items-start justify-between">
+    <div>
+      <h4 class="font-bold text-lg">Regional Music Festival</h4>
+      <p class="text-primary font-medium text-sm">Best Performance</p>
+      <p class="text-slate-500 text-xs mt-1">Awarded to: <span class="font-semibold">Siti Nurhaliza</span></p>
+    </div>
+    <span class="material-symbols-outlined text-slate-400">military_tech</span>
+  </div>
+</div>
+<!-- Achievement 3 -->
+<div class="bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+  <div class="aspect-video sm:h-48 rounded-xl bg-slate-100 dark:bg-slate-700 mb-4 overflow-hidden">
+    <img alt="District Basketball Cup" class="w-full h-full object-cover" data-alt="Sports team celebrating victory on the field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6N4ZLuSKeuuddF_rI81DO-Hw19fR6k1T1JhGF37lwvn03vPeaQlERIMb6NCQeUw2U-lkAbwc2tjpBdEjtzbWM7_Spx8daa9BvdDyouPCIb2M_j6-6VtqK5mQe6Tlb5MCNEN1QLvmfmdaPXQrgHDVnchnFUB1isQp4S_eWjbMLfwmk7CWDfvumsPtJHGeCF0HPZjJaKuKUtg1dOKY75Pu20ddY8-lk-tHASyavO3J8tOgDwkpDZqJaXawPXYq5eER1Xtp8ZquUDpoK"/>
+  </div>
+  <div class="flex items-start justify-between">
+    <div>
+      <h4 class="font-bold text-lg">District Basketball Cup</h4>
+      <p class="text-primary font-medium text-sm">Championship Winner</p>
+      <p class="text-slate-500 text-xs mt-1">Awarded to: <span class="font-semibold">Rama Tigers Team</span></p>
+    </div>
+    <span class="material-symbols-outlined text-amber-700">military_tech</span>
+  </div>
+</div>
+</div>
+</section>
+<!-- Student Work/Literacy Corner -->
+<section>
+  <div class="flex items-end gap-3 mb-6 sm:mb-8">
+    <span class="material-symbols-outlined text-3xl sm:text-4xl text-primary">auto_stories</span>
+    <div>
+      <h2 class="text-2xl font-bold">Literacy Corner</h2>
+      <p class="text-slate-500 text-sm">Student works, journals, and creative writing pieces</p>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
+<!-- Featured Article -->
+<div class="lg:col-span-2 glass rounded-2xl overflow-hidden flex flex-col md:flex-row">
+  <div class="md:w-1/2 h-48 md:h-auto overflow-hidden">
+    <img alt="Writing" class="w-full h-full object-cover" data-alt="Close up of student hand writing in a journal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGkDOIJPidFb6GSrMz4o9vafZXLDmUjmV_haPKP0REXxbYDdOJFkLU1HrK5o9jTdzwxTZLucDSr1UfdSljMl5DiT-dK1yEHBWVifqz7LgxYV3mU1q_G7T8JSaIwi8Cf4spNGy8CeLIg0BAfNT0IwnbOsRDscVygPj9ByycBbiFWEUy3KB6snG6_Csaxq475U1FiVd5vfmccuAdmKfUMU6MZ93SfUyYnLi6QbUCu_piT_y6DYLdEyBIELdRFMMhJzgidPsTeuB-7o-m"/>
+  </div>
+  <div class="md:w-1/2 p-6 sm:p-8 flex flex-col justify-center">
+    <div class="flex items-center gap-2 mb-4">
+      <span class="bg-primary/20 text-primary text-[10px] font-bold px-2 py-0.5 rounded uppercase">Monthly Feature</span>
+      <span class="text-slate-400 text-xs">October 24, 2023</span>
+    </div>
+    <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">The Future of Green Technology in Our School</h3>
+    <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 leading-relaxed">
+      Explore how our student-led sustainability project is transforming our campus into an eco-friendly environment...
+    </p>
+    <div class="flex items-center gap-3">
+      <div class="size-8 rounded-full bg-slate-200 flex-shrink-0"></div>
+      <div>
+        <p class="text-xs font-bold">Budi Santoso</p>
+        <p class="text-[10px] text-slate-400">Grade XI - Science</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Sidebar list -->
+<div class="space-y-4">
+  <div class="glass p-4 sm:p-5 rounded-xl flex gap-4 items-start hover:bg-white/90 dark:hover:bg-slate-800 transition-colors cursor-pointer group">
+    <div class="flex-shrink-0 text-primary">
+      <span class="material-symbols-outlined">edit_note</span>
+    </div>
+    <div>
+      <h4 class="font-bold text-sm group-hover:text-primary transition-colors">Poetry: The Echo of Morning</h4>
+      <p class="text-xs text-slate-500 mt-1">by Anisa Putri - Grade X</p>
+    </div>
+  </div>
+  <div class="glass p-4 sm:p-5 rounded-xl flex gap-4 items-start hover:bg-white/90 dark:hover:bg-slate-800 transition-colors cursor-pointer group">
+    <div class="flex-shrink-0 text-primary">
+      <span class="material-symbols-outlined">description</span>
+    </div>
+    <div>
+      <h4 class="font-bold text-sm group-hover:text-primary transition-colors">Digital Art: Cyberpunk Jakarta</h4>
+      <p class="text-xs text-slate-500 mt-1">by Kevin Pratama - Grade XII</p>
+    </div>
+  </div>
+  <div class="glass p-4 sm:p-5 rounded-xl flex gap-4 items-start hover:bg-white/90 dark:hover:bg-slate-800 transition-colors cursor-pointer group">
+    <div class="flex-shrink-0 text-primary">
+      <span class="material-symbols-outlined">menu_book</span>
+    </div>
+    <div>
+      <h4 class="font-bold text-sm group-hover:text-primary transition-colors">Student Journal: Field Trip Memories</h4>
+      <p class="text-xs text-slate-500 mt-1">by OSIS Publication Team</p>
+    </div>
+  </div>
+  <button class="w-full py-3 rounded-xl bg-primary text-white font-bold text-sm hover:bg-primary-dark transition-all shadow-md shadow-primary/20">
+    Submit Your Work
+  </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="mt-16 sm:mt-20 border-t border-slate-200 dark:border-slate-800 py-10 sm:py-12 px-4 sm:px-6 bg-white dark:bg-background-dark/50">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+    <div class="flex flex-col items-center md:items-start text-center md:text-left">
+      <div class="flex items-center gap-3 text-primary mb-4">
+        <span class="material-symbols-outlined text-2xl font-bold">star_rate</span>
+        <h2 class="text-slate-900 dark:text-white text-lg font-bold">Yayasan Rama Sejahtera</h2>
+      </div>
+      <p class="text-slate-500 text-sm max-w-xs">Jl. Raya Pendidikan No. 12, Jakarta, Indonesia</p>
+    </div>
+    <div class="flex gap-6 sm:gap-8">
+      <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">social_leaderboard</span></a>
+      <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+      <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">smart_display</span></a>
+      <a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+    </div>
+    <p class="text-slate-400 text-xs text-center md:text-right">© 2023 Yayasan Rama Sejahtera. All rights reserved.</p>
+  </div>
+</footer>
+</div>
+</body></html>

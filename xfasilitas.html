@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Facilities - Yayasan Rama Sejahtera</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2563eb",
+                        "background-light": "#f8fafc",
+                        "background-dark": "#0f172a",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .dark .glass {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(37, 99, 235, 0.1);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+    <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 w-full glass border-b border-primary/10 px-4 md:px-10 lg:px-20 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <div class="text-primary">
+                <span class="material-symbols-outlined text-3xl">school</span>
+            </div>
+            <h2 class="text-xl font-bold tracking-tight">Yayasan Rama Sejahtera</h2>
+        </div>
+        <nav class="hidden md:flex items-center gap-6 lg:gap-10">
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Beranda</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="profil.html">Profil</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="akademik.html">Akademik</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="Kesiswaan.html">Kesiswaan</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="berita.html">Berita</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="kontak.html">Kontak</a>
+        </nav>
+        <div class="flex items-center gap-2 md:gap-4">
+            <button class="p-2 rounded-xl bg-primary/10 text-primary hover:bg-primary/20 transition-colors">
+                <span class="material-symbols-outlined">notifications</span>
+            </button>
+            <button class="p-2 rounded-xl bg-primary text-white hover:opacity-90 transition-opacity">
+                <span class="material-symbols-outlined">person</span>
+            </button>
+        </div>
+    </div>
+</header>
+<main class="flex-1 w-full max-w-7xl mx-auto px-4 md:px-10 py-6 md:py-8">
+<!-- Hero Section -->
+<section class="relative rounded-2xl md:rounded-3xl overflow-hidden min-h-[350px] md:min-h-[400px] flex flex-col justify-end p-6 md:p-16 mb-8 md:mb-12 group">
+    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Modern high school campus aerial view architecture" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBGG5vWbBXH4Mw2rk9-GmgGRpYBTNVePk19vXOFM7Z-TZqqfGqjzMdxKOLJvUlQQctyU7yesdFmJFTmdm6CFZ6OEmfeCugJQJSWGgut2eoL7zAOsx7xznsjRcHoxkHklQ09COrL9tRJk9JgPTzHnofnLhqkHf-J9tMBNJ8ZDz-8wIh8lgZG9MS2nWzLrBPntKqyVYu4L3GLhsQQljeb8r710HoHr-xuLtPFW2N7LAeCV6A-QSydLfW29Xgbkpjh8pCma9Xpoij4YgZ8');"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent"></div>
+    <div class="relative z-10 glass p-6 md:p-8 rounded-2xl max-w-2xl border-white/20">
+        <h1 class="text-3xl md:text-5xl font-bold mb-4">World-Class Learning Environment</h1>
+        <p class="text-base md:text-lg opacity-90 leading-relaxed mb-6">Discover our state-of-the-art facilities designed to inspire excellence in academics, sports, and creative exploration.</p>
+        <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-[10px] md:text-xs font-bold uppercase tracking-wider">Innovation Hub</span>
+            <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-[10px] md:text-xs font-bold uppercase tracking-wider">Olympic Standards</span>
+        </div>
+    </div>
+</section>
+<!-- Category Tabs -->
+<div class="mb-8 md:mb-12 overflow-x-auto no-scrollbar -mx-4 px-4">
+    <div class="flex border-b border-primary/10 min-w-max gap-4 md:gap-8">
+        <button class="border-b-2 border-primary text-primary px-2 md:px-4 py-3 md:py-4 text-sm font-bold flex items-center gap-2">
+            <span class="material-symbols-outlined text-lg">grid_view</span> All Facilities
+        </button>
+        <button class="border-b-2 border-transparent text-slate-500 hover:text-primary px-2 md:px-4 py-3 md:py-4 text-sm font-bold flex items-center gap-2 transition-all">
+            <span class="material-symbols-outlined text-lg">science</span> Academic Labs
+        </button>
+        <button class="border-b-2 border-transparent text-slate-500 hover:text-primary px-2 md:px-4 py-3 md:py-4 text-sm font-bold flex items-center gap-2 transition-all">
+            <span class="material-symbols-outlined text-lg">sports_soccer</span> Sports &amp; Athletics
+        </button>
+        <button class="border-b-2 border-transparent text-slate-500 hover:text-primary px-2 md:px-4 py-3 md:py-4 text-sm font-bold flex items-center gap-2 transition-all">
+            <span class="material-symbols-outlined text-lg">meeting_room</span> Classrooms
+        </button>
+        <button class="border-b-2 border-transparent text-slate-500 hover:text-primary px-2 md:px-4 py-3 md:py-4 text-sm font-bold flex items-center gap-2 transition-all">
+            <span class="material-symbols-outlined text-lg">library_books</span> Learning Spaces
+        </button>
+    </div>
+</div>
+<!-- Academic Labs Section -->
+<section class="mb-12 md:mb-20">
+    <div class="flex items-center justify-between mb-6 md:mb-8">
+        <div class="flex items-center gap-3">
+            <div class="p-2 bg-primary/10 rounded-lg text-primary">
+                <span class="material-symbols-outlined">science</span>
+            </div>
+            <h2 class="text-xl md:text-2xl font-bold">Academic Laboratories</h2>
+        </div>
+        <div class="h-px flex-1 bg-primary/10 mx-6 hidden md:block"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+<!-- Computer Lab -->
+<div class="group relative rounded-2xl overflow-hidden aspect-[4/3]">
+    <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Modern computer lab with latest workstations" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9hZfFlk4w1BwebEXL3lbBm6a9mt1FFVTtujHp_r06CCwp3-RgQPu8XfTXb8s-Jurre7sw2sU51QnSO8mlTSQp0ZCL-5e8vTHxfPYBVvfWRR5-1Xa-v3_oslfCs5l7xn5dnX5AgYynJkpaaatvrneBuuQylzCGBLlUWaQk6bFrEOhTl0asuwrc_vstFUmWUM4_2Jg_yDYOkVVJklUmn_8JdZf1FmgSEa2VzYHdoXKC59oU4-B-juwB4_dAYPDwjXNKyUGdoAeohQcK"/>
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 to-transparent"></div>
+    <div class="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6 glass p-4 md:p-6 rounded-xl border-white/30">
+        <h3 class="text-lg md:text-xl font-bold mb-2">Advanced Computing Center</h3>
+        <p class="text-xs md:text-sm opacity-90">Equipped with 40+ high-end workstations for programming, AI research, and digital design.</p>
+    </div>
+</div>
+<!-- Science Lab -->
+<div class="group relative rounded-2xl overflow-hidden aspect-[4/3]">
+    <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Science laboratory with microscopes and equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBANebWnDVq40S0tExCQ2vUhtILwtbCwD0ZAZQny0nPVLso1boE69J_ZJTMKsAAHF9DzncNk5FTov7MXi6J0u42ksPSDNbHPp7KSW27VlROYdJ7NpC7vySWIJQ64FIv_DYNJAtVBdCmXZb8yhNDONGlztWSWHueJ2k6EAeKXpWvhuBNEPPWmS0v7UNW0EsUqpeeNYf7aY_gSFPei5km3cI3hWMx65UOQGFuIV4_1P4cLvsSLsOyFtvNk-EznOqPkx6hmjJT1OkG2tv2"/>
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 to-transparent"></div>
+    <div class="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6 glass p-4 md:p-6 rounded-xl border-white/30">
+        <h3 class="text-lg md:text-xl font-bold mb-2">Integrated Science Lab</h3>
+        <p class="text-xs md:text-sm opacity-90">Specialized equipment for Biology, Chemistry, and Physics experiments under expert supervision.</p>
+    </div>
+</div>
+</div>
+</section>
+<!-- Sports Section -->
+<section class="mb-12 md:mb-20">
+    <div class="flex items-center justify-between mb-6 md:mb-8">
+        <div class="flex items-center gap-3">
+            <div class="p-2 bg-primary/10 rounded-lg text-primary">
+                <span class="material-symbols-outlined">sports_basketball</span>
+            </div>
+            <h2 class="text-xl md:text-2xl font-bold">Sports &amp; Recreation</h2>
+        </div>
+        <div class="h-px flex-1 bg-primary/10 mx-6 hidden md:block"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+<!-- Field -->
+<div class="group relative rounded-2xl overflow-hidden min-h-[300px] md:h-[400px] md:col-span-2">
+    <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Green synthetic turf soccer field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbzXxi2p_szX8XFft-FbKWShxztOKs12MFjazASWaWwXKQH9eJY-DYZ9INklw3JJgW7TynxzODhO97JC867U-t7RgQXm-PGGWmDn6QHueSfXXjIQSMRg5U0smiWvgwXZxh2gDndqTtSJn7TCQZLPXJRGxv5LmRi6P369wo90BYXvN7VdlLfaM3QsgnMOiMF0whCe8nYRQ1b5kB7LC1j_1XSZV7AHutmE5cjL-iekeHbpIvKXU_MlgX6qDSExkIGV4m4L8bpUi9zbLd"/>
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 to-transparent"></div>
+    <div class="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6 glass p-4 md:p-6 rounded-xl border-white/30">
+        <h3 class="text-lg md:text-xl font-bold mb-2">Olympic-Size Soccer Field</h3>
+        <p class="text-xs md:text-sm opacity-90">Professional-grade synthetic turf with stadium lighting for evening athletics.</p>
+    </div>
+</div>
+<!-- Indoor Hall -->
+<div class="group relative rounded-2xl overflow-hidden min-h-[300px] md:h-[400px]">
+    <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Modern indoor basketball and sports hall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANTUp0o0d6w2Bp2uXmoNrjGpmSeAFHD52TdvbuTLs3Ba_m_EdRnXU-hJo85QsKLBOclUKb5725ZaK84UVd4Fp_im9t2LI6uUPVMuuk9VoAA-jlNJfS9vdvs_jODmfJCh7tuYFtnxXLE8fuxmUjMxEAQewK3cy4ZJeM7Y8ZyheMTiJR_FrgzW60_IQwVXMhi6HKCL4pj3qRL3d4tK76AWEIeYLe0KAHvV04lS6b6PV1pYd6bc8083lYD-dl0DgsNdbs5xfPD_QB1a2w"/>
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 to-transparent"></div>
+    <div class="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6 glass p-4 md:p-6 rounded-xl border-white/30">
+        <h3 class="text-lg md:text-xl font-bold mb-2">Multi-Purpose Sports Hall</h3>
+        <p class="text-xs md:text-sm opacity-90">Air-conditioned facility for basketball, badminton, and gymnastics.</p>
+    </div>
+</div>
+</div>
+</section>
+<!-- Classrooms Section -->
+<section class="mb-12 md:mb-20">
+    <div class="flex items-center justify-between mb-6 md:mb-8">
+        <div class="flex items-center gap-3">
+            <div class="p-2 bg-primary/10 rounded-lg text-primary">
+                <span class="material-symbols-outlined">school</span>
+            </div>
+            <h2 class="text-xl md:text-2xl font-bold">Future Classrooms</h2>
+        </div>
+        <div class="h-px flex-1 bg-primary/10 mx-6 hidden md:block"></div>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        <div class="lg:col-span-1 glass p-6 md:p-8 rounded-2xl md:rounded-3xl border-primary/10 flex flex-col justify-center">
+            <h3 class="text-xl md:text-2xl font-bold text-primary mb-4">Redefining Space</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm md:text-base leading-relaxed mb-6">Our classrooms are ergonomically designed to foster collaboration, critical thinking, and comfort during the learning process.</p>
+            <ul class="space-y-4">
+                <li class="flex items-center gap-3 text-xs md:text-sm font-medium">
+                    <span class="material-symbols-outlined text-primary text-xl">check_circle</span> Smart Interactive Boards
+                </li>
+                <li class="flex items-center gap-3 text-xs md:text-sm font-medium">
+                    <span class="material-symbols-outlined text-primary text-xl">check_circle</span> Flexible Seating
+                </li>
+                <li class="flex items-center gap-3 text-xs md:text-sm font-medium">
+                    <span class="material-symbols-outlined text-primary text-xl">check_circle</span> High-Speed Wi-Fi 6
+                </li>
+            </ul>
+        </div>
+        <div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+            <div class="rounded-2xl overflow-hidden glass p-2 group">
+                <div class="relative rounded-xl overflow-hidden aspect-video">
+                    <img class="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Modern collaborative classroom setup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzcugWaXl65tDZfdHnvOQ9P0O5e0TNtOnTdDg0E0GDsRa446d8vdQCZXAj7LYxKaqXoQcPMKW93o7WWsuS_9wS2IBsIGeCWuxKIuykX-ojBN6Og8Ju2FpXCyF1bX4faWFUcHDrnBTUquIwGZ5loCYIQI3o78jNiFCQNKVin_W0R0oT1gODpqqPVGmV6vkiXKuNuJ3PUMrX3HiJM4_rVfxRWlTMd3bj1Fu7Yhaf3bNg_v5OIrOB7D4uFuUbmZyfbHtYppkXf5vJUohJ"/>
+                </div>
+                <div class="p-3 md:p-4">
+                    <h4 class="font-bold text-base md:text-lg">Primary Learning Hub</h4>
+                    <p class="text-xs md:text-sm opacity-70">Focusing on interactive play and foundational skills.</p>
+                </div>
+            </div>
+            <div class="rounded-2xl overflow-hidden glass p-2 group">
+                <div class="relative rounded-xl overflow-hidden aspect-video">
+                    <img class="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Senior student classroom with advanced tech" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlqkvjeFguiA3Lqh5DZ9NITrg06QrLY_RGciz7GbSpPfJFXDUGxIIJAir__F55n2Z4rh4kMVHUZNhQcaN1VESXZgh_aGIGICcGvque30E5wTVjQUAIbw1lo4KuyVsCO8INhZDTrGbrj7M_wLxxQZpDzVJVXNp160KHejQBmRtUCLoxH5ZeLJKoemzqnvlooYE2qpURrzo6ZUmk4-_tothz5_6wWKrObN6015xtr_1pCUaLkkdeWWN6a7v7N6tUhRnMJmkvYeOIs6mc"/>
+                </div>
+                <div class="p-3 md:p-4">
+                    <h4 class="font-bold text-base md:text-lg">Senior Seminar Rooms</h4>
+                    <p class="text-xs md:text-sm opacity-70">Designed for advanced discussions and research.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Stats Section -->
+<section class="mb-12 md:mb-20 glass rounded-2xl md:rounded-3xl p-6 md:p-10 border-primary/20">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center">
+        <div class="flex flex-col items-center">
+            <div class="text-3xl md:text-4xl font-extrabold text-primary mb-2">12+</div>
+            <div class="text-[10px] md:text-sm font-bold opacity-60 uppercase tracking-widest">Specialized Labs</div>
+        </div>
+        <div class="flex flex-col items-center">
+            <div class="text-3xl md:text-4xl font-extrabold text-primary mb-2">15k</div>
+            <div class="text-[10px] md:text-sm font-bold opacity-60 uppercase tracking-widest">Sq. Ft Area</div>
+        </div>
+        <div class="flex flex-col items-center">
+            <div class="text-3xl md:text-4xl font-extrabold text-primary mb-2">100%</div>
+            <div class="text-[10px] md:text-sm font-bold opacity-60 uppercase tracking-widest">Smart Classes</div>
+        </div>
+        <div class="flex flex-col items-center">
+            <div class="text-3xl md:text-4xl font-extrabold text-primary mb-2">5</div>
+            <div class="text-[10px] md:text-sm font-bold opacity-60 uppercase tracking-widest">Sports Arenas</div>
+        </div>
+    </div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary/5 border-t border-primary/10 py-10 md:py-12 px-4 md:px-10 lg:px-20">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex flex-col items-center md:items-start gap-3">
+            <div class="flex items-center gap-3">
+                <div class="text-primary">
+                    <span class="material-symbols-outlined text-3xl">school</span>
+                </div>
+                <h2 class="text-xl font-bold tracking-tight">Yayasan Rama Sejahtera</h2>
+            </div>
+            <p class="text-xs opacity-60">Empowering Excellence since 1995</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-6 md:gap-8 text-sm font-medium opacity-70">
+            <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+            <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+            <a class="hover:text-primary transition-colors" href="#">Campus Map</a>
+        </div>
+        <div class="flex gap-4">
+            <button class="w-10 h-10 rounded-full glass border-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
+                <span class="material-symbols-outlined text-lg">public</span>
+            </button>
+            <button class="w-10 h-10 rounded-full glass border-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
+                <span class="material-symbols-outlined text-lg">mail</span>
+            </button>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-10 md:mt-12 pt-8 border-t border-primary/5 text-center text-[10px] md:text-xs opacity-40">
+        © 2024 Yayasan Rama Sejahtera. All rights reserved.
+    </div>
+</footer>
+</div>
+</body></html>
