@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2563eb", // Vibrant professional blue (Blue 600)
+                        "background-light": "#f8fafc",
+                        "background-dark": "#0f172a",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .dark .glass-card {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(37, 99, 235, 0.1);
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <header class="sticky top-0 z-50 glass-card px-4 md:px-12 lg:px-40 py-4 flex items-center justify-between whitespace-nowrap border-b border-primary/10">
+                <div class="flex items-center gap-4 lg:gap-8">
+                    <div class="flex items-center gap-3 text-primary">
+                        <span class="material-symbols-outlined text-3xl font-bold">star_rate</span>
+                        <h2 class="text-slate-900 dark:text-slate-100 text-xl font-extrabold leading-tight tracking-tight">Rama Sejahtera</h2>
+                    </div>
+                    <nav class="hidden md:flex items-center gap-4 lg:gap-8">
+                     <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Beranda</a>
+                     <a class="text-sm font-medium hover:text-primary transition-colors" href="profil.html">Profil</a>
+                     <a class="text-sm font-medium hover:text-primary transition-colors" href="akademik.html">Akademik</a>
+                     <a class="text-sm font-medium hover:text-primary transition-colors" href="kesiswaan.html">Kesiswaan</a>
+                     <a class="text-sm font-semibold text-primary" href="berita.html">Berita</a>
+                     <a class="text-sm font-medium hover:text-primary transition-colors" href="kontak.html">Kontak</a>
+                 </nav>
+             </div>
+             <div class="flex flex-1 justify-end gap-3 md:gap-6 items-center">
+                <div class="hidden lg:flex items-center bg-white/50 dark:bg-black/20 rounded-xl px-3 py-1.5 border border-primary/10">
+                    <span class="material-symbols-outlined text-primary text-xl">search</span>
+                    <input class="bg-transparent border-none focus:ring-0 text-sm placeholder:text-slate-400 w-48" placeholder="Search articles..." type="text"/>
+                </div>
+                <button class="md:hidden text-slate-600 dark:text-slate-400">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="bg-primary/20 p-1 rounded-full border border-primary/30">
+                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-8 md:size-9" data-alt="User profile avatar circle thumbnail" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCqUMDbXWe8DFBdOnDYSSZ2KNate1Bjj5n82CBA1BOJg64u0SNR1r7MIMnhOQGj6mV9gLjJDQQg3Bgqlz3SHDeFEWkIP7H9O4uyq46kvD4iwrZ_Vi7PfwPJUbi_8NtfQz21HzGMKoNdJi0yLlJb0QXKJNGEIEvhJFssseytrEjS1OKM073lDlI54SFCdeeC8wEI21flHAlUXM_Rsm-4dOxY9fprEQM-N2CC8FIwNrXl3E9Ky4aFtlmlpSGHrS9vIxR_RqqwkC1_wwjn");'></div>
+                </div>
+            </div>
+        </header>
+        <main class="flex-1 px-4 md:px-12 lg:px-40 py-8 md:py-12 max-w-[1440px] mx-auto w-full">
+            <section class="mb-8 md:mb-12">
+                <div class="flex flex-col gap-4">
+                    <span class="text-primary font-bold tracking-widest uppercase text-xs">Community Updates</span>
+                    <h1 class="text-slate-900 dark:text-slate-100 text-3xl md:text-5xl font-black leading-tight tracking-tight">News &amp; Insights</h1>
+                    <p class="text-slate-600 dark:text-slate-400 text-base md:text-lg max-w-2xl">Discover stories of impact, educational resources, and the latest happenings within the Rama Sejahtera community.</p>
+                </div>
+            </section>
+            <div class="flex overflow-x-auto no-scrollbar gap-3 mb-8 md:mb-10 pb-4 border-b border-primary/5 -mx-4 px-4 md:mx-0 md:px-0">
+                <button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-primary px-6 text-white text-sm font-bold shadow-lg shadow-primary/20">
+                    All Posts
+                </button>
+                <button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-white dark:bg-white/5 px-6 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-white/10 text-sm font-semibold hover:bg-primary/5 transition-all">
+                    <span class="material-symbols-outlined text-lg text-primary">campaign</span>
+                    Event Coverage
+                </button>
+                <button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-white dark:bg-white/5 px-6 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-white/10 text-sm font-semibold hover:bg-primary/5 transition-all">
+                    <span class="material-symbols-outlined text-lg text-primary">school</span>
+                    Education Tips
+                </button>
+                <button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-white dark:bg-white/5 px-6 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-white/10 text-sm font-semibold hover:bg-primary/5 transition-all">
+                    <span class="material-symbols-outlined text-lg text-primary">notifications</span>
+                    Announcements
+                </button>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <div class="group glass-card rounded-2xl overflow-hidden flex flex-col transition-all hover:translate-y-[-4px] hover:shadow-2xl hover:shadow-primary/10">
+                    <div class="relative overflow-hidden h-48 md:h-52">
+                        <div class="absolute inset-0 bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Children learning together in a bright classroom" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA7jUjrEzvp829KG7C-SZUL729ZV8ymwidjnFTE5z0ogcgPckVtFOg57TuvPlbPRNPjn81QEmDXUOIJyCbs8WTdGwVjvGWgfKPhq5-cYCShJI_tmO3VPZznkV0gNIpFn164KvdTcYgpvr7wm8JOhzFW5JR5V4tiT8AP6GbRkuU78_qQKwfP5hU8Z20zk2zC4-YFZoteW2m68k9GZ4tGVEuirfwEq1c4_8KxZ2kYpPxPid-h9aBsWYoQp34BylVp8WICklY3p36kNuVA");'></div>
+                        <div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Education</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-1">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="material-symbols-outlined text-primary text-sm">calendar_today</span>
+                            <span class="text-slate-500 dark:text-slate-400 text-xs font-medium">May 12, 2024</span>
+                        </div>
+                        <h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold mb-3 leading-snug group-hover:text-primary transition-colors">The Power of Play: Early Childhood Development</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 line-clamp-3">Understanding how play-based learning transforms cognitive abilities in children under the age of seven...</p>
+                        <div class="mt-auto pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between">
+                            <a class="text-primary text-sm font-bold flex items-center gap-1 group/btn" href="#">
+                                Read More 
+                                <span class="material-symbols-outlined text-lg transition-transform group-hover/btn:translate-x-1">arrow_forward</span>
+                            </a>
+                            <div class="flex items-center gap-1 text-slate-400">
+                                <span class="material-symbols-outlined text-sm">schedule</span>
+                                <span class="text-[10px]">5 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group glass-card rounded-2xl overflow-hidden flex flex-col transition-all hover:translate-y-[-4px] hover:shadow-2xl hover:shadow-primary/10">
+                    <div class="relative overflow-hidden h-48 md:h-52">
+                        <div class="absolute inset-0 bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Community volunteers gathered for a charity event" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCatJU_t-tmTOTZO_vHsbG3z_3b9YfEVXkdOkHIwLZn8z5Cu1y-XOv462a69VuQoGEu7pbkrYEopWamUvhdWBlcYanFzTH8N4S-P7cM3tOOBz-BAWHiIFfU_7ygAKFzvtqwihTfpNvMN1NXgZWjsBVYAFTvt264qeuG_Lx-g8dfjavcTGJC0UwVMGrmGqboleViLUUZTBoMrGijICJ3Bvo3TXsQBtUghSWm_naFU07nypodgFZmfXtj9lJKYCZi0rLnNeF2yj2d15bw");'></div>
+                        <div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Event</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-1">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="material-symbols-outlined text-primary text-sm">calendar_today</span>
+                            <span class="text-slate-500 dark:text-slate-400 text-xs font-medium">April 28, 2024</span>
+                        </div>
+                        <h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold mb-3 leading-snug group-hover:text-primary transition-colors">Annual Gala 2024: A Night of Hope and Unity</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 line-clamp-3">Highlights from our most successful fundraising event yet, supporting over 200 local families in need...</p>
+                        <div class="mt-auto pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between">
+                            <a class="text-primary text-sm font-bold flex items-center gap-1 group/btn" href="#">
+                                Read More 
+                                <span class="material-symbols-outlined text-lg transition-transform group-hover/btn:translate-x-1">arrow_forward</span>
+                            </a>
+                            <div class="flex items-center gap-1 text-slate-400">
+                                <span class="material-symbols-outlined text-sm">schedule</span>
+                                <span class="text-[10px]">8 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group glass-card rounded-2xl overflow-hidden flex flex-col transition-all hover:translate-y-[-4px] hover:shadow-2xl hover:shadow-primary/10">
+                    <div class="relative overflow-hidden h-48 md:h-52">
+                        <div class="absolute inset-0 bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Close up of books and a pencil on a desk" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC-E_GB_LtDLrI83vCs_decUkThE9vt3ZbcoUf4v9F5Lkxss213yIb8h2AsU2ewoxf3bKGDFEsYVT7cAdUNEt2-1IQf22N-7VpqIYBJzDaGz_niiAQtf3q4vel2Pl0nrfA3Lch2wXjRa991VHbiFtE9o3INaVKS9gIlL0u8ZaHUTJ3ypg0LxN-V-tYj6lqzg0V7JbhFHeJYkjpYoPcFBPVg6UZ4pRRElj0PxXYgMLvk2OkCJtsAzy73CjtXY0Sb-IvXC8mXqQWRqlI-");'></div>
+                        <div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Tips</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-1">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="material-symbols-outlined text-primary text-sm">calendar_today</span>
+                            <span class="text-slate-500 dark:text-slate-400 text-xs font-medium">April 15, 2024</span>
+                        </div>
+                        <h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold mb-3 leading-snug group-hover:text-primary transition-colors">Digital Literacy for the Next Generation</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 line-clamp-3">Essential strategies for parents to guide children through the digital landscape safely and productively...</p>
+                        <div class="mt-auto pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between">
+                            <a class="text-primary text-sm font-bold flex items-center gap-1 group/btn" href="#">
+                                Read More 
+                                <span class="material-symbols-outlined text-lg transition-transform group-hover/btn:translate-x-1">arrow_forward</span>
+                            </a>
+                            <div class="flex items-center gap-1 text-slate-400">
+                                <span class="material-symbols-outlined text-sm">schedule</span>
+                                <span class="text-[10px]">4 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group glass-card rounded-2xl overflow-hidden flex flex-col transition-all hover:translate-y-[-4px] hover:shadow-2xl hover:shadow-primary/10">
+                    <div class="relative overflow-hidden h-48 md:h-52">
+                        <div class="absolute inset-0 bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="School building exterior in the morning light" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1HP1BfoGJfefFm5DVNeMjuPyM2r4ncFGalyxLNU15J5TogLj_cJKlEtI_o3s4PLMVgDJyE7hNav71Lx3av0sWhUz0VBfEvY1p1Gko5kDKGDr6WN_PH0Yb4O8XQvX7pqemMBv4Pnd8WGhRw2buAks794oWs8IlBgaE55tC5yYx1UggqwDFM1Ll_gLXdJS8sqG-_5Ft8q8VQRjBzpZfY9HL_sa6BZIjdwkrY32Vly4sBU2V0V-vIDYOj_ulnJoCZCFXUmRT5xgboWY5");'></div>
+                        <div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">News</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-1">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="material-symbols-outlined text-primary text-sm">calendar_today</span>
+                            <span class="text-slate-500 dark:text-slate-400 text-xs font-medium">March 30, 2024</span>
+                        </div>
+                        <h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold mb-3 leading-snug group-hover:text-primary transition-colors">New Learning Center Opens in Bekasi</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 line-clamp-3">We are proud to announce the opening of our 5th facility, dedicated to vocational training for youth...</p>
+                        <div class="mt-auto pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between">
+                            <a class="text-primary text-sm font-bold flex items-center gap-1 group/btn" href="#">
+                                Read More 
+                                <span class="material-symbols-outlined text-lg transition-transform group-hover/btn:translate-x-1">arrow_forward</span>
+                            </a>
+                            <div class="flex items-center gap-1 text-slate-400">
+                                <span class="material-symbols-outlined text-sm">schedule</span>
+                                <span class="text-[10px]">6 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group glass-card rounded-2xl overflow-hidden flex flex-col transition-all hover:translate-y-[-4px] hover:shadow-2xl hover:shadow-primary/10">
+                    <div class="relative overflow-hidden h-48 md:h-52">
+                        <div class="absolute inset-0 bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Happy child holding hands with an adult" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCNklslTPEjdyyjyN-3pqIbiG8iY2W0qqqgQzjl0q1so2awrQ1C5zzvzo_b28W7SLFi3ztKAP80vlYAMjYdBa8OFRc-aQQDu-NZ6HWrLpUPefWvJkZxUXIGdc1PwPYpPQM0TfwH_daVKMBdd4T7qlWVWf9GPYWcwvoVALLb8gT75ey9n-TZH0WZval3Ur_3r7KDGjeRX1Y2FQkG5BJimU7uGW8luJ4lVvzzXRx1_c-0EP1bKIgH5uaBWc4L3W-483i-fiiKpIllYsK5");'></div>
+                        <div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Success Story</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-1">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="material-symbols-outlined text-primary text-sm">calendar_today</span>
+                            <span class="text-slate-500 dark:text-slate-400 text-xs font-medium">March 12, 2024</span>
+                        </div>
+                        <h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold mb-3 leading-snug group-hover:text-primary transition-colors">From Student to Mentor: Aris's Journey</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 line-clamp-3">A heartwarming story of how Rama Sejahtera's scholarship program changed one life forever...</p>
+                        <div class="mt-auto pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between">
+                            <a class="text-primary text-sm font-bold flex items-center gap-1 group/btn" href="#">
+                                Read More 
+                                <span class="material-symbols-outlined text-lg transition-transform group-hover/btn:translate-x-1">arrow_forward</span>
+                            </a>
+                            <div class="flex items-center gap-1 text-slate-400">
+                                <span class="material-symbols-outlined text-sm">schedule</span>
+                                <span class="text-[10px]">10 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group glass-card rounded-2xl overflow-hidden flex flex-col transition-all hover:translate-y-[-4px] hover:shadow-2xl hover:shadow-primary/10">
+                    <div class="relative overflow-hidden h-48 md:h-52">
+                        <div class="absolute inset-0 bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="People collaborating around a wooden table" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDiqa976aSYXU8sqsYor1gB1ZDnPUI1VNpqYNVrWSHCD0K-h_rypbHjTQBcy7_X-zjTJwErpMj_ijbHXxxRsSljt6D46t8-9lFsRY4_Y4URA6jAW0UomGmL8nZwgFBEEkWjN5rwWeT1BImV2cclS52Jx4C8KrXHToegYjGIw7fXbvrXMuX3nNUNliS29KyyJPb1lymRqhaayvvW2eQHsiGwk5L629XhmlssRKfUeGdKAeRSGpTDP18Qrnq1DUc_X6JB2vPahBoNCLaH");'></div>
+                        <div class="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Announcement</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-1">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="material-symbols-outlined text-primary text-sm">calendar_today</span>
+                            <span class="text-slate-500 dark:text-slate-400 text-xs font-medium">Feb 24, 2024</span>
+                        </div>
+                        <h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold mb-3 leading-snug group-hover:text-primary transition-colors">Volunteer Recruitment: Spring Cycle</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-6 line-clamp-3">We are looking for dedicated mentors for our after-school tutoring programs. Join our mission today!</p>
+                        <div class="mt-auto pt-4 border-t border-slate-100 dark:border-white/5 flex items-center justify-between">
+                            <a class="text-primary text-sm font-bold flex items-center gap-1 group/btn" href="#">
+                                Read More 
+                                <span class="material-symbols-outlined text-lg transition-transform group-hover/btn:translate-x-1">arrow_forward</span>
+                            </a>
+                            <div class="flex items-center gap-1 text-slate-400">
+                                <span class="material-symbols-outlined text-sm">schedule</span>
+                                <span class="text-[10px]">3 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 md:mt-16 flex items-center justify-center gap-2">
+                <button class="flex size-10 md:size-11 items-center justify-center rounded-xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">
+                    <span class="material-symbols-outlined">chevron_left</span>
+                </button>
+                <button class="flex size-10 md:size-11 items-center justify-center rounded-xl bg-primary text-white font-bold text-sm shadow-lg shadow-primary/20">1</button>
+                <button class="flex size-10 md:size-11 items-center justify-center rounded-xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300 font-bold text-sm hover:border-primary/50 transition-colors">2</button>
+                <button class="flex size-10 md:size-11 items-center justify-center rounded-xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300 font-bold text-sm hover:border-primary/50 transition-colors">3</button>
+                <div class="px-2 text-slate-400">...</div>
+                <button class="flex size-10 md:size-11 items-center justify-center rounded-xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-700 dark:text-slate-300 font-bold text-sm hover:border-primary/50 transition-colors">8</button>
+                <button class="flex size-10 md:size-11 items-center justify-center rounded-xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-600 dark:text-slate-400 hover:text-primary transition-colors">
+                    <span class="material-symbols-outlined">chevron_right</span>
+                </button>
+            </div>
+        </main>
+        <footer class="glass-card border-t border-primary/10 px-4 md:px-12 lg:px-40 py-12 mt-12 md:mt-20">
+            <div class="max-w-[1440px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div class="col-span-1 sm:col-span-2 lg:col-span-1">
+                    <div class="flex items-center gap-3 text-primary mb-6">
+                        <span class="material-symbols-outlined text-3xl font-bold">star_rate</span>
+                        <h2 class="text-slate-900 dark:text-slate-100 text-lg font-extrabold">Rama Sejahtera</h2>
+                    </div>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">Empowering communities through sustainable education and social initiatives across Indonesia.</p>
+                    <div class="flex gap-4">
+                        <a class="size-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+                            <span class="material-symbols-outlined text-lg">share</span>
+                        </a>
+                        <a class="size-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+                            <span class="material-symbols-outlined text-lg">mail</span>
+                        </a>
+                        <a class="size-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+                            <span class="material-symbols-outlined text-lg">thumb_up</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-slate-900 dark:text-slate-100 font-bold mb-6">Navigation</h4>
+                    <ul class="flex flex-col gap-3">
+                        <li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary transition-colors" href="#">About Us</a></li>
+                        <li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary transition-colors" href="#">Our Programs</a></li>
+                        <li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary transition-colors" href="#">Donate</a></li>
+                        <li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary transition-colors" href="#">Volunteer</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-slate-900 dark:text-slate-100 font-bold mb-6">Resources</h4>
+                    <ul class="flex flex-col gap-3">
+                        <li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary transition-colors" href="#">Annual Reports</a></li>
+                        <li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary transition-colors" href="#">Media Kit</a></li>
+                        <li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+                        <li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-primary transition-colors" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-slate-900 dark:text-slate-100 font-bold mb-6">Newsletter</h4>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm mb-4">Stay updated with our stories.</p>
+                    <div class="flex gap-2">
+                        <input class="bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-lg px-3 py-2 text-sm w-full focus:ring-primary focus:border-primary" placeholder="Email address" type="email"/>
+                        <button class="bg-primary text-white p-2 rounded-lg hover:brightness-110 transition-all flex items-center justify-center">
+                            <span class="material-symbols-outlined">send</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-[1440px] mx-auto mt-12 pt-8 border-t border-slate-200 dark:border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-400 text-xs">© 2024 Yayasan Rama Sejahtera. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a class="text-slate-400 text-xs hover:text-primary" href="#">Terms of Service</a>
+                    <a class="text-slate-400 text-xs hover:text-primary" href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<style>
+    /* Hide scrollbar for category filter on mobile */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+</style>
+</body></html>
